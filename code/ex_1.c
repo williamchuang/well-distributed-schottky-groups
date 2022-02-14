@@ -1,3 +1,12 @@
+/* Copyright (C) 2022 William Huanshan Chuang - All Rights Reserved
+* You may use, distribute and modify this code under the 
+* terms of the MIT license.
+* You should have received a copy of the MIT licese with
+* this file.
+* Author: William Huanshan Chuang
+* Date: 02/14/2022
+* email: wchuang2@mail.sfsu.edu
+*/
 # 3 "example1.c"
 #define PY_SSIZE_T_CLEAN 
 #include "Python.h"
@@ -1418,12 +1427,12 @@ static const char __pyx_k_Exp_negative_Hyperbolic_Distance[] = "Exp_negative_Hyp
 static const char __pyx_k_Improved_Exp_negative_Hyperbolic[] = "Improved_Exp_negative_Hyperbolic_Distance_Gamma0_with_t";
 static const char __pyx_k_Polar_complex_complex_to_Cartesi[] = "Polar_complex_complex_to_Cartesian";
 static const char __pyx_k_ave_of_all_exp_of_negative_rho_o[] = "ave_of_all_exp_of_negative_rho_of_this_level:";
-static const char __pyx_k_ave_of_all_short_exp_of_negative[] = "ave_of_all_short_exp_of_negative_rho_of_this_level:";
+static const char __pyx_k_ave_of_all_large_exp_of_negative[] = "ave_of_all_large_exp_of_negative_rho_of_this_level:";
 static const char __pyx_k_Exp_negative_Hyperbolic_Distance_2[] = "Exp_negative_Hyperbolic_Distance_Gamma0_with_t";
 static const char __pyx_k_Improved_Exp_negative_Hyperbolic_2[] = "Improved_Exp_negative_Hyperbolic_Distance_Gamma0";
 static const char __pyx_k_ave_of_all_exp_of_negative_rho_o_2[] = "ave_of_all_exp_of_negative_rho_of_this_level";
-static const char __pyx_k_ave_of_all_short_exp_of_negative_2[] = "ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level:";
-static const char __pyx_k_ave_of_all_short_exp_of_negative_3[] = "ave_of_all_short_exp_of_negative_rho_of_this_level";
+static const char __pyx_k_ave_of_all_large_exp_of_negative_2[] = "ave_of_all_large_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level:";
+static const char __pyx_k_ave_of_all_large_exp_of_negative_3[] = "ave_of_all_large_exp_of_negative_rho_of_this_level";
 static PyObject *__pyx_kp_s_;
 static PyObject *__pyx_kp_s_1_0_1;
 static PyObject *__pyx_n_s_A;
@@ -1477,9 +1486,9 @@ static PyObject *__pyx_n_s_atan;
 static PyObject *__pyx_n_s_author;
 static PyObject *__pyx_kp_s_ave_of_all_exp_of_negative_rho_o;
 static PyObject *__pyx_n_s_ave_of_all_exp_of_negative_rho_o_2;
-static PyObject *__pyx_kp_s_ave_of_all_short_exp_of_negative;
-static PyObject *__pyx_kp_s_ave_of_all_short_exp_of_negative_2;
-static PyObject *__pyx_n_s_ave_of_all_short_exp_of_negative_3;
+static PyObject *__pyx_kp_s_ave_of_all_large_exp_of_negative;
+static PyObject *__pyx_kp_s_ave_of_all_large_exp_of_negative_2;
+static PyObject *__pyx_n_s_ave_of_all_large_exp_of_negative_3;
 static PyObject *__pyx_n_s_b;
 static PyObject *__pyx_n_s_b1;
 static PyObject *__pyx_n_s_b2;
@@ -13302,7 +13311,7 @@ static PyObject *__pyx_pf_8example1_60examples_of_10000(CYTHON_UNUSED PyObject *
   PyObject *__pyx_v_occurence = NULL;
   PyObject *__pyx_v_tmp = NULL;
   PyObject *__pyx_v_node = NULL;
-  PyObject *__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level = NULL;
+  PyObject *__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -13541,14 +13550,14 @@ static PyObject *__pyx_pf_8example1_60examples_of_10000(CYTHON_UNUSED PyObject *
               if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 661, __pyx_L6_error)
               __Pyx_GOTREF(__pyx_t_1);
               __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-              __Pyx_XDECREF_SET(__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level, __pyx_t_1);
+              __Pyx_XDECREF_SET(__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level, __pyx_t_1);
               __pyx_t_1 = 0;
 # 18389 "example1.c"
-              __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_rho, __pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 662, __pyx_L6_error)
+              __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_rho, __pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 662, __pyx_L6_error)
 # 18398 "example1.c"
-              __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 663, __pyx_L6_error)
+              __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 663, __pyx_L6_error)
               __Pyx_GOTREF(__pyx_t_1);
-              __pyx_t_2 = PyNumber_Add(__pyx_kp_s_ave_of_all_short_exp_of_negative, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 663, __pyx_L6_error)
+              __pyx_t_2 = PyNumber_Add(__pyx_kp_s_ave_of_all_large_exp_of_negative, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 663, __pyx_L6_error)
               __Pyx_GOTREF(__pyx_t_2);
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
               if (__Pyx_PrintOne(0, __pyx_t_2) < 0) __PYX_ERR(0, 663, __pyx_L6_error)
@@ -13562,23 +13571,23 @@ static PyObject *__pyx_pf_8example1_60examples_of_10000(CYTHON_UNUSED PyObject *
               if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 664, __pyx_L6_error)
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 # 18428 "example1.c"
-              __pyx_t_1 = __Pyx_PyInt_NeObjC(__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 665, __pyx_L6_error)
+              __pyx_t_1 = __Pyx_PyInt_NeObjC(__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 665, __pyx_L6_error)
               __Pyx_GOTREF(__pyx_t_1);
               __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 665, __pyx_L6_error)
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
               if (__pyx_t_3) {
 # 18441 "example1.c"
-                __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level, __pyx_v_ave_of_all_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 666, __pyx_L6_error)
+                __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level, __pyx_v_ave_of_all_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 666, __pyx_L6_error)
                 __Pyx_GOTREF(__pyx_t_1);
                 __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_rho, __pyx_t_1); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 666, __pyx_L6_error)
                 __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 # 18453 "example1.c"
-                __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level, __pyx_v_ave_of_all_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 667, __pyx_L6_error)
+                __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level, __pyx_v_ave_of_all_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 667, __pyx_L6_error)
                 __Pyx_GOTREF(__pyx_t_1);
                 __pyx_t_2 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 667, __pyx_L6_error)
                 __Pyx_GOTREF(__pyx_t_2);
                 __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-                __pyx_t_1 = PyNumber_Add(__pyx_kp_s_ave_of_all_short_exp_of_negative_2, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 667, __pyx_L6_error)
+                __pyx_t_1 = PyNumber_Add(__pyx_kp_s_ave_of_all_large_exp_of_negative_2, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 667, __pyx_L6_error)
                 __Pyx_GOTREF(__pyx_t_1);
                 __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
                 if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 667, __pyx_L6_error)
@@ -13693,7 +13702,7 @@ static PyObject *__pyx_pf_8example1_60examples_of_10000(CYTHON_UNUSED PyObject *
   __Pyx_XDECREF(__pyx_v_occurence);
   __Pyx_XDECREF(__pyx_v_tmp);
   __Pyx_XDECREF(__pyx_v_node);
-  __Pyx_XDECREF(__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level);
+  __Pyx_XDECREF(__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
@@ -13787,7 +13796,7 @@ static PyObject *__pyx_pf_8example1_62examples_of_10000_with_t(CYTHON_UNUSED PyO
   PyObject *__pyx_v_occurence = NULL;
   PyObject *__pyx_v_tmp = NULL;
   PyObject *__pyx_v_node = NULL;
-  PyObject *__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level = NULL;
+  PyObject *__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -14027,14 +14036,14 @@ static PyObject *__pyx_pf_8example1_62examples_of_10000_with_t(CYTHON_UNUSED PyO
               if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 704, __pyx_L6_error)
               __Pyx_GOTREF(__pyx_t_1);
               __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-              __Pyx_XDECREF_SET(__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level, __pyx_t_1);
+              __Pyx_XDECREF_SET(__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level, __pyx_t_1);
               __pyx_t_1 = 0;
 # 19215 "example1.c"
-              __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_rho, __pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 705, __pyx_L6_error)
+              __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_rho, __pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 705, __pyx_L6_error)
 # 19224 "example1.c"
-              __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 706, __pyx_L6_error)
+              __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 706, __pyx_L6_error)
               __Pyx_GOTREF(__pyx_t_1);
-              __pyx_t_2 = PyNumber_Add(__pyx_kp_s_ave_of_all_short_exp_of_negative, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 706, __pyx_L6_error)
+              __pyx_t_2 = PyNumber_Add(__pyx_kp_s_ave_of_all_large_exp_of_negative, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 706, __pyx_L6_error)
               __Pyx_GOTREF(__pyx_t_2);
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
               if (__Pyx_PrintOne(0, __pyx_t_2) < 0) __PYX_ERR(0, 706, __pyx_L6_error)
@@ -14048,23 +14057,23 @@ static PyObject *__pyx_pf_8example1_62examples_of_10000_with_t(CYTHON_UNUSED PyO
               if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 707, __pyx_L6_error)
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 # 19254 "example1.c"
-              __pyx_t_1 = __Pyx_PyInt_NeObjC(__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 708, __pyx_L6_error)
+              __pyx_t_1 = __Pyx_PyInt_NeObjC(__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 708, __pyx_L6_error)
               __Pyx_GOTREF(__pyx_t_1);
               __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 708, __pyx_L6_error)
               __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
               if (__pyx_t_3) {
 # 19267 "example1.c"
-                __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level, __pyx_v_ave_of_all_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 709, __pyx_L6_error)
+                __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level, __pyx_v_ave_of_all_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 709, __pyx_L6_error)
                 __Pyx_GOTREF(__pyx_t_1);
                 __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_rho, __pyx_t_1); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 709, __pyx_L6_error)
                 __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 # 19279 "example1.c"
-                __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level, __pyx_v_ave_of_all_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 710, __pyx_L6_error)
+                __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level, __pyx_v_ave_of_all_exp_of_negative_rho_of_this_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 710, __pyx_L6_error)
                 __Pyx_GOTREF(__pyx_t_1);
                 __pyx_t_2 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 710, __pyx_L6_error)
                 __Pyx_GOTREF(__pyx_t_2);
                 __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-                __pyx_t_1 = PyNumber_Add(__pyx_kp_s_ave_of_all_short_exp_of_negative_2, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 710, __pyx_L6_error)
+                __pyx_t_1 = PyNumber_Add(__pyx_kp_s_ave_of_all_large_exp_of_negative_2, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 710, __pyx_L6_error)
                 __Pyx_GOTREF(__pyx_t_1);
                 __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
                 if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 710, __pyx_L6_error)
@@ -14185,7 +14194,7 @@ static PyObject *__pyx_pf_8example1_62examples_of_10000_with_t(CYTHON_UNUSED PyO
   __Pyx_XDECREF(__pyx_v_occurence);
   __Pyx_XDECREF(__pyx_v_tmp);
   __Pyx_XDECREF(__pyx_v_node);
-  __Pyx_XDECREF(__pyx_v_ave_of_all_short_exp_of_negative_rho_of_this_level);
+  __Pyx_XDECREF(__pyx_v_ave_of_all_large_exp_of_negative_rho_of_this_level);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
@@ -14290,9 +14299,9 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_author, __pyx_k_author, sizeof(__pyx_k_author), 0, 0, 1, 1},
   {&__pyx_kp_s_ave_of_all_exp_of_negative_rho_o, __pyx_k_ave_of_all_exp_of_negative_rho_o, sizeof(__pyx_k_ave_of_all_exp_of_negative_rho_o), 0, 0, 1, 0},
   {&__pyx_n_s_ave_of_all_exp_of_negative_rho_o_2, __pyx_k_ave_of_all_exp_of_negative_rho_o_2, sizeof(__pyx_k_ave_of_all_exp_of_negative_rho_o_2), 0, 0, 1, 1},
-  {&__pyx_kp_s_ave_of_all_short_exp_of_negative, __pyx_k_ave_of_all_short_exp_of_negative, sizeof(__pyx_k_ave_of_all_short_exp_of_negative), 0, 0, 1, 0},
-  {&__pyx_kp_s_ave_of_all_short_exp_of_negative_2, __pyx_k_ave_of_all_short_exp_of_negative_2, sizeof(__pyx_k_ave_of_all_short_exp_of_negative_2), 0, 0, 1, 0},
-  {&__pyx_n_s_ave_of_all_short_exp_of_negative_3, __pyx_k_ave_of_all_short_exp_of_negative_3, sizeof(__pyx_k_ave_of_all_short_exp_of_negative_3), 0, 0, 1, 1},
+  {&__pyx_kp_s_ave_of_all_large_exp_of_negative, __pyx_k_ave_of_all_large_exp_of_negative, sizeof(__pyx_k_ave_of_all_large_exp_of_negative), 0, 0, 1, 0},
+  {&__pyx_kp_s_ave_of_all_large_exp_of_negative_2, __pyx_k_ave_of_all_large_exp_of_negative_2, sizeof(__pyx_k_ave_of_all_large_exp_of_negative_2), 0, 0, 1, 0},
+  {&__pyx_n_s_ave_of_all_large_exp_of_negative_3, __pyx_k_ave_of_all_large_exp_of_negative_3, sizeof(__pyx_k_ave_of_all_large_exp_of_negative_3), 0, 0, 1, 1},
   {&__pyx_n_s_b, __pyx_k_b, sizeof(__pyx_k_b), 0, 0, 1, 1},
   {&__pyx_n_s_b1, __pyx_k_b1, sizeof(__pyx_k_b1), 0, 0, 1, 1},
   {&__pyx_n_s_b2, __pyx_k_b2, sizeof(__pyx_k_b2), 0, 0, 1, 1},
@@ -14542,12 +14551,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__61);
   __pyx_codeobj__62 = (PyObject*)__Pyx_PyCode_New(4, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_example1_py, __pyx_n_s_Improved_Exp_negative_Hyperbolic_2, 566, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__62)) __PYX_ERR(0, 566, __pyx_L1_error)
 # 20086 "example1.c"
-  __pyx_tuple__63 = PyTuple_Pack(15, __pyx_n_s_initial, __pyx_n_s_increment, __pyx_n_s_counter_2, __pyx_n_s_useful_example_2, __pyx_n_s_out, __pyx_n_s_rho, __pyx_n_s_i, __pyx_n_s_sum1, __pyx_n_s_sum2, __pyx_n_s_test, __pyx_n_s_ave_of_all_exp_of_negative_rho_o_2, __pyx_n_s_occurence_2, __pyx_n_s_tmp, __pyx_n_s_node, __pyx_n_s_ave_of_all_short_exp_of_negative_3); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 637, __pyx_L1_error)
+  __pyx_tuple__63 = PyTuple_Pack(15, __pyx_n_s_initial, __pyx_n_s_increment, __pyx_n_s_counter_2, __pyx_n_s_useful_example_2, __pyx_n_s_out, __pyx_n_s_rho, __pyx_n_s_i, __pyx_n_s_sum1, __pyx_n_s_sum2, __pyx_n_s_test, __pyx_n_s_ave_of_all_exp_of_negative_rho_o_2, __pyx_n_s_occurence_2, __pyx_n_s_tmp, __pyx_n_s_node, __pyx_n_s_ave_of_all_large_exp_of_negative_3); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 637, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__63);
   __Pyx_GIVEREF(__pyx_tuple__63);
   __pyx_codeobj__64 = (PyObject*)__Pyx_PyCode_New(2, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__63, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_example1_py, __pyx_n_s_examples_of_10000, 637, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__64)) __PYX_ERR(0, 637, __pyx_L1_error)
 # 20098 "example1.c"
-  __pyx_tuple__65 = PyTuple_Pack(16, __pyx_n_s_initial, __pyx_n_s_increment, __pyx_n_s_t0, __pyx_n_s_counter_2, __pyx_n_s_useful_example_2, __pyx_n_s_out, __pyx_n_s_rho, __pyx_n_s_i, __pyx_n_s_sum1, __pyx_n_s_sum2, __pyx_n_s_test, __pyx_n_s_ave_of_all_exp_of_negative_rho_o_2, __pyx_n_s_occurence_2, __pyx_n_s_tmp, __pyx_n_s_node, __pyx_n_s_ave_of_all_short_exp_of_negative_3); if (unlikely(!__pyx_tuple__65)) __PYX_ERR(0, 679, __pyx_L1_error)
+  __pyx_tuple__65 = PyTuple_Pack(16, __pyx_n_s_initial, __pyx_n_s_increment, __pyx_n_s_t0, __pyx_n_s_counter_2, __pyx_n_s_useful_example_2, __pyx_n_s_out, __pyx_n_s_rho, __pyx_n_s_i, __pyx_n_s_sum1, __pyx_n_s_sum2, __pyx_n_s_test, __pyx_n_s_ave_of_all_exp_of_negative_rho_o_2, __pyx_n_s_occurence_2, __pyx_n_s_tmp, __pyx_n_s_node, __pyx_n_s_ave_of_all_large_exp_of_negative_3); if (unlikely(!__pyx_tuple__65)) __PYX_ERR(0, 679, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__65);
   __Pyx_GIVEREF(__pyx_tuple__65);
   __pyx_codeobj__66 = (PyObject*)__Pyx_PyCode_New(3, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__65, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_example1_py, __pyx_n_s_examples_of_10000_with_t, 679, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__66)) __PYX_ERR(0, 679, __pyx_L1_error)

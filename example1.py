@@ -658,13 +658,13 @@ def examples_of_10000(initial, increment):
                     print("N="+str(i))
                     print("occurence="+str(occurence))
                     if len(tmp)!=0:
-                        ave_of_all_short_exp_of_negative_rho_of_this_level=statistics.mean(tmp)
-                        rho.append(ave_of_all_short_exp_of_negative_rho_of_this_level)
-                        print("ave_of_all_short_exp_of_negative_rho_of_this_level:"+str(ave_of_all_short_exp_of_negative_rho_of_this_level))
+                        ave_of_all_large_exp_of_negative_rho_of_this_level=statistics.mean(tmp)
+                        rho.append(ave_of_all_large_exp_of_negative_rho_of_this_level)
+                        print("ave_of_all_large_exp_of_negative_rho_of_this_level:"+str(ave_of_all_large_exp_of_negative_rho_of_this_level))
                         print("ave_of_all_exp_of_negative_rho_of_this_level:"+str(ave_of_all_exp_of_negative_rho_of_this_level))
-                        if ave_of_all_short_exp_of_negative_rho_of_this_level!=0:
-                            rho.append(ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level)
-                            print("ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level:"+str(ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level))
+                        if ave_of_all_large_exp_of_negative_rho_of_this_level!=0:
+                            rho.append(ave_of_all_large_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level)
+                            print("ave_of_all_large_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level:"+str(ave_of_all_large_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level))
                         
             except:
                 print("---")
@@ -701,13 +701,13 @@ def examples_of_10000_with_t(initial, increment,t0):
                     print("N="+str(i))
                     print("occurence="+str(occurence))
                     if len(tmp)!=0:
-                        ave_of_all_short_exp_of_negative_rho_of_this_level=statistics.mean(tmp)
-                        rho.append(ave_of_all_short_exp_of_negative_rho_of_this_level)
-                        print("ave_of_all_short_exp_of_negative_rho_of_this_level:"+str(ave_of_all_short_exp_of_negative_rho_of_this_level))
+                        ave_of_all_large_exp_of_negative_rho_of_this_level=statistics.mean(tmp)
+                        rho.append(ave_of_all_large_exp_of_negative_rho_of_this_level)
+                        print("ave_of_all_large_exp_of_negative_rho_of_this_level:"+str(ave_of_all_large_exp_of_negative_rho_of_this_level))
                         print("ave_of_all_exp_of_negative_rho_of_this_level:"+str(ave_of_all_exp_of_negative_rho_of_this_level))
-                        if ave_of_all_short_exp_of_negative_rho_of_this_level!=0:
-                            rho.append(ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level)
-                            print("ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level:"+str(ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level))
+                        if ave_of_all_large_exp_of_negative_rho_of_this_level!=0:
+                            rho.append(ave_of_all_large_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level)
+                            print("ave_of_all_large_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level:"+str(ave_of_all_large_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level))
                         
             except:
                 print("---")
