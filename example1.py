@@ -207,7 +207,7 @@ def classification_point(Lambda):
     return [float((2*Lambda**2)/(Lambda**4+1)),float((Lambda**4-1)/(Lambda**4+1))]
 
 def check_T_generate_a_Schottky(Lambda,m):
-    t=float(math.pi/2)-float(math.pi/(2*m))
+    t=float(-3*math.pi/2)+float(math.pi/(2*m))
     K=Polar_complex_complex_to_Cartesian([1,-t])
     B=classification_point(Lambda)
     T=operator_T(Lambda)
