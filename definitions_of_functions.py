@@ -718,4 +718,3 @@ def examples_of_10000_with_t(initial, increment,t0):
         counter+=increment
         print("counter:"+str(counter))
         print("useful_example:"+str(useful_example))
-examples_of_10000_with_t(initial=0.3, increment=0.000001,t0=0.25)
