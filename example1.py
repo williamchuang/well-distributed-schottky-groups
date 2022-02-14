@@ -524,21 +524,14 @@ def examples_of_10000(initial, increment):
                         print("ave_of_all_short_exp_of_negative_rho_of_this_level:"+str(ave_of_all_short_exp_of_negative_rho_of_this_level))
                         print("ave_of_all_exp_of_negative_rho_of_this_level:"+str(ave_of_all_exp_of_negative_rho_of_this_level))
                         if ave_of_all_short_exp_of_negative_rho_of_this_level!=0:
+                            rho.append(ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level)
                             print("ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level:"+str(ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level))
                         
             except:
                 print("---")
-        if len(out)>2:
-            #print(out)
-            flag=0
-            for n in range(len(out)):                
-                if n>1:
-                    if out[n][1]/out[n-1][1]>1:
-                        flag=1
-            if flag==1:        
+        if len(rho)>2:
+            if rho[-1]>1:        
                 useful_example+=1
-                
-                print(out)
         
         counter+=increment
         print("counter:"+str(counter))
