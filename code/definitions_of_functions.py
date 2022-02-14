@@ -207,7 +207,7 @@ def classification_point(Lambda):
     return [float((2*Lambda**2)/(Lambda**4+1)),float((Lambda**4-1)/(Lambda**4+1))]
 
 def check_T_generate_a_Schottky(Lambda,m):
-    t=float(math.pi/2)-float(math.pi/(2*m))
+    t=float(-3*math.pi/2)+float(math.pi/(2*m))
     K=Polar_complex_complex_to_Cartesian([1,-t])
     B=classification_point(Lambda)
     T=operator_T(Lambda)
@@ -426,6 +426,143 @@ def Exp_negative_Hyperbolic_Distance_Gamma0(Lambda,m,N):
     return Hyperbolic_distance
 
 # measuring Exp(-hyperbolic distance)
+def Exp_negative_Hyperbolic_Distance_Gamma0_with_t(Lambda,m,N,t):
+    T=operator_T(Lambda)
+    theta=float(math.pi/m)
+    R=operator_R(theta)
+    L=[Tz(T,[0,0])]
+    tmp1=[]
+    tmp2=[]
+    nodes_in_DT=[[0,0]]
+    j=1
+    while j<=N:
+        #N=1
+        if j==1:
+            z=L[0]
+            tmp1=[]
+            tmp2=[]
+            for i in range(2*m-1):
+                z=Tz(R,z)
+                tmp1.append(z)
+                if i!=m-1:
+                    tmp2.append(z)
+                else:
+                    tmp2.append(L[0])
+            L=[]
+            for k in tmp2:
+                L.append(k)
+            nodes_in_DT=[Tz(T,[0,0])]
+
+        #N>1
+        else:
+            nodes_in_DT=[]
+            tmp1=[]
+            tmp2=[]
+            tmp3=[]
+            for k in L:
+                z=Tz(T,k)
+                nodes_in_DT.append(z)
+                tmp1.append(z)
+                tmp2.append(z)
+            L=[]
+            for i in range(2*m-1):
+                if i!=m-1:
+                    for k in tmp1:
+                        tmp3.append(Tz(R,k))
+                    tmp1=[]
+                    for k in tmp3:
+                        tmp1.append(k)
+                        L.append(k)
+                    tmp3=[]
+                elif i==m-1:
+                    for k in tmp1:
+                        tmp3.append(Tz(R,k))
+                    tmp1=[]
+                    for k in tmp3:
+                        tmp1.append(k)
+                    tmp3=[]
+                    for k in tmp2:
+                        L.append(k)
+
+        j+=1
+    Hyperbolic_distance=[]
+    for k in nodes_in_DT:
+        Hyperbolic_distance.append(math.exp(-t*Cartesian_radial_hyperbolic_distance(k)))
+    return Hyperbolic_distance
+
+# measuring Exp(-t*(hyperbolic distance))
+def Improved_Exp_negative_Hyperbolic_Distance_Gamma0_with_t(Lambda,m,N,L,t):
+
+    T=operator_T(Lambda)
+    theta=float(math.pi/m)
+    R=operator_R(theta)
+    if len(L)==0:
+        L=[Tz(T,[0,0])]
+        j=1
+    else:
+        j=N
+    tmp1=[]
+    tmp2=[]
+    nodes_in_DT=[[0,0]]
+    
+    while j<=N:
+        #N=1
+        if j==1:
+            z=L[0]
+            tmp1=[]
+            tmp2=[]
+            for i in range(2*m-1):
+                z=Tz(R,z)
+                tmp1.append(z)
+                if i!=m-1:
+                    tmp2.append(z)
+                else:
+                    tmp2.append(L[0])
+            L=[]
+            for k in tmp2:
+                L.append(k)
+            nodes_in_DT=[Tz(T,[0,0])]
+
+        #N>1
+        else:
+            nodes_in_DT=[]
+            tmp1=[]
+            tmp2=[]
+            tmp3=[]
+            for k in L:
+                z=Tz(T,k)
+                nodes_in_DT.append(z)
+                tmp1.append(z)
+                tmp2.append(z)
+            L=[]
+            for i in range(2*m-1):
+                if i!=m-1:
+                    for k in tmp1:
+                        tmp3.append(Tz(R,k))
+                    tmp1=[]
+                    for k in tmp3:
+                        tmp1.append(k)
+                        L.append(k)
+                    tmp3=[]
+                elif i==m-1:
+                    for k in tmp1:
+                        tmp3.append(Tz(R,k))
+                    tmp1=[]
+                    for k in tmp3:
+                        tmp1.append(k)
+                    tmp3=[]
+                    for k in tmp2:
+                        L.append(k)
+
+        j+=1
+    Hyperbolic_distance=[]
+    for k in nodes_in_DT:
+        Hyperbolic_distance.append(math.exp(-t*Cartesian_radial_hyperbolic_distance(k)))
+    return [Hyperbolic_distance,L]
+
+
+
+# measuring Exp(-hyperbolic distance)
 def Improved_Exp_negative_Hyperbolic_Distance_Gamma0(Lambda,m,N,L):
 
     T=operator_T(Lambda)
@@ -495,6 +632,8 @@ def Improved_Exp_negative_Hyperbolic_Distance_Gamma0(Lambda,m,N,L):
         Hyperbolic_distance.append(math.exp(-Cartesian_radial_hyperbolic_distance(k)))
     return [Hyperbolic_distance,L]
 
+
+
 def examples_of_10000(initial, increment):
     counter=initial
     useful_example=0
@@ -507,7 +646,50 @@ def examples_of_10000(initial, increment):
                 for i in range(15):
                     sum1=0
                     sum2=0
-                    test=Exp_negative_Hyperbolic_Distance_Gamma0(Lambda=0.3,m=2,N=i)
+                    test=Exp_negative_Hyperbolic_Distance_Gamma0(Lambda=counter,m=2,N=i)
+                    ave_of_all_exp_of_negative_rho_of_this_level=statistics.mean(test)
+                    occurence=0
+                    tmp=[]
+                    for node in test:
+                        if node < ave_of_all_exp_of_negative_rho_of_this_level:
+                            occurence+=1
+                        else:
+                            tmp.append(node)
+                    print("N="+str(i))
+                    print("occurence="+str(occurence))
+                    if len(tmp)!=0:
+                        ave_of_all_short_exp_of_negative_rho_of_this_level=statistics.mean(tmp)
+                        rho.append(ave_of_all_short_exp_of_negative_rho_of_this_level)
+                        print("ave_of_all_short_exp_of_negative_rho_of_this_level:"+str(ave_of_all_short_exp_of_negative_rho_of_this_level))
+                        print("ave_of_all_exp_of_negative_rho_of_this_level:"+str(ave_of_all_exp_of_negative_rho_of_this_level))
+                        if ave_of_all_short_exp_of_negative_rho_of_this_level!=0:
+                            rho.append(ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level)
+                            print("ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level:"+str(ave_of_all_short_exp_of_negative_rho_of_this_level/ave_of_all_exp_of_negative_rho_of_this_level))
+                        
+            except:
+                print("---")
+        if len(rho)>2:
+            if rho[-1]>1:        
+                useful_example+=1
+        
+        counter+=increment
+        print("counter:"+str(counter))
+        print("useful_example:"+str(useful_example))
+        
+def examples_of_10000_with_t(initial, increment,t0):
+    counter=initial
+    useful_example=0
+    while counter < initial+10000*increment:
+        print("************"+str(counter)+"************")
+        out=[]
+        if check_T_generate_a_Schottky(Lambda=counter,m=2):
+            try:
+                rho=[]
+                for i in range(15):
+                    sum1=0
+                    sum2=0
+                    test=Exp_negative_Hyperbolic_Distance_Gamma0_with_t(Lambda=counter,m=2,N=i,t=t0)
+                    #test=Exp_negative_Hyperbolic_Distance_Gamma0_with_t(Lambda=0.3,m=2,N=i,t=t0)
                     ave_of_all_exp_of_negative_rho_of_this_level=statistics.mean(test)
                     occurence=0
                     tmp=[]
