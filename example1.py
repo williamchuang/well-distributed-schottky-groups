@@ -543,3 +543,4 @@ def examples_of_10000(initial, increment):
         counter+=increment
         print("counter:"+str(counter))
         print("useful_example:"+str(useful_example))
+examples_of_10000(initial=0.3, increment=0.000001)
