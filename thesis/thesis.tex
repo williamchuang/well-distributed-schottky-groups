@@ -6,7 +6,7 @@
 \newcommand\mytitle{The Hausdorff Dimension of Limit Sets of Well-distributed Schottky Groups} % The graduate division requires this to be in caps.
 %The Computation of Hausdorff dimension for Bounds on Volume of some Algebraic Curves via its exponent of Poincar\'{e} Series
 %Automorphic Function and Poincar\'{e} Series in Algebraic Curves
-%The Computation of the Critical Exponent of Poincar\'{e} Series via spectral theory and the geometry of klenian groups with Applications
+%The Computation of the Critical Exponent of Poincar\'{e} Series via spectral theory and the geometry of Kleinian groups with Applications
 \newcommand\mydegree{Master of Arts} % change to  Master of Science if applicable
 \newcommand\myfield{Mathematics} % e.g., Mathematics
 \newcommand\thismonth{May } % graduation month: May / August / December
@@ -70,7 +70,7 @@
     {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
     {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
     {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
-    {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+    { }{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
     {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
     {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
     {€}{{\EUR}}1 {£}{{\pounds}}1
@@ -114,7 +114,7 @@
     {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
     {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
     {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
-    {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+    { }{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
     {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
     {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
     {€}{{\EUR}}1 {£}{{\pounds}}1
@@ -326,7 +326,7 @@ Copyright by\\
 \vspace{.6in}
 \begin{quote}
 I certify that I have read {\it \mytitle} by \myname and that in my opinion this work meets the criteria for approving a thesis submitted in partial fulfillment of the requirements
-for the degree: \mydegree in \myfield at San Francisco State University.
+for the degree: \mydegree \, in \myfield at San Francisco State University.
 \end{quote}
 
 \vspace{0.75in}
@@ -348,7 +348,7 @@ Assistant Professor of \myfield
 
 \hrule{\hspace{3.5in}} \\
 Your committee member\\
-Professor of \myfield 
+Assistant Professor of \myfield 
 
 }
 }
@@ -373,11 +373,11 @@ San Francisco State University \\
 \vspace{.3in}
 
 \doublespacing{\noindent
-The problem we are trying to solve: Let a finitely generated Schottky group $G$ be given. How to find bounds and an exact value of Hausdorff dimension of the limit set $L(G)$? 
+Let a finitely generated Schottky group $G$ be given, and $\mathbb{B}^2$ be a Poincar\'{e} disk model of two-dimensional hyperbolic space. An unsolved problem is: How to find an exact value of Hausdorff dimension of the limit set $L(G)$ when $L(G)\neq \partial \mathbb{B}^2$? 
 
-To solve one specific case of the problem, a well-distributed Schottky group $\Gamma=\left\langle T_1,T_2,...,T_m\right\rangle$ is defined. For a well-distributed Schottky group in two-dimensional hyperbolic space $\mathbb{B}^2$, our main theorem was proved based on: properties of Poincar\'{e} series, isometric circles, and some nice properties come with the definition of well-distributed Schottky group, and for the first time, our main theorem gives sharp bounds on $\delta(\Gamma)$.
+To solve one specific case of this problem, a well-distributed Schottky group $\Gamma=\left\langle T_1,T_2,...,T_m\right\rangle$ is defined. Our main theorem gives sharp bounds on the critical exponent of Poincar\'{e} series, and the theorem was proved based on: properties of Poincar\'{e} series, isometric circles, and some nice properties come with the definition of well-distributed Schottky group, especially that we found a way to reconstruct the orbit $\Gamma(0)$ by using only two operators $T$ and $R$ for any $m\in\mathbb{Z}^+$. 
 
-Following the proof of the main theorem, an exact form expression of Hausdorff dimension for two-generator Schottky group was conjectured and used to generate results against the best approximation derived using McMullen's algorithm.
+Following the proof of the main theorem, for the first time, an exact form of Hausdorff dimension for all possible well-distributed Schottky groups of rank two was conjectured and used to generate results against the best approximation derived using McMullen's algorithm.
 
 
 
@@ -441,29 +441,36 @@ Many thanks to everyone who assisted me in obtaining my degree; without you, non
 
 \chapter{Introduction}
 
-%To plot out a big picture of what are the necessary to be included in this thesis to make it self-contained, let's look at the following Poincar\'{e} series derived from an $2$-dimensional setting. 
+%To plot out a big picture of what is necessary to be included in this thesis to make it self-contained, let's look at the following Poincar\'{e} series derived from an $2$-dimensional setting. 
 
 Considering $G=\left\langle T_1, T_2,...,T_m\right\rangle$ is a finitely generated Schottky group(see \ref{Dynamics of Schottky Groups}), then its associated Poincar\'{e} series (see Chapter \ref{PoincareSeries}) is: 
 
 $$
 \mathcal{P}(G,t):=\sum\limits_{\forall g_i\in G}\exp\left\lbrace -td_{\mathbb{B}^2}(z,g_i(z)) \right\rbrace
 $$
-where $\delta(G):=\inf\left\lbrace t\in\mathbb{R}:\mathcal{P}(G,t)<\infty \right\rbrace = \sup\left\lbrace t\in\mathbb{R}:\mathcal{P}(G,t)=\infty\right\rbrace$ is called the critical exponent of the Poincar\'{e} sereis or the Poincar\'{e} exponent, and $z,g_i(z)\in \mathbb{B}^2$. 
+where $\delta(G):=\inf\left\lbrace t\in\mathbb{R}:\mathcal{P}(G,t)<\infty \right\rbrace = \sup\left\lbrace t\in\mathbb{R}:\mathcal{P}(G,t)=\infty\right\rbrace$ is called the critical exponent of the Poincar\'{e} series, the exponent of convergence of the Poincar\'{e} series, or the Poincar\'{e} exponent, and $z,g_i(z)\in \mathbb{B}^2$. 
 
-The following are four top historical reasons that highlight the need of creating a systematic method for computing the critical exponent of the Poincar\'{e} sereis, albeit the technical specifics will not be discussed in the thesis. They are: the exponent of Poincar\'{e} series has some important meaning in the prime geodesic theorem\cite{borthwick2007spectral}, it plays an important role in the spectral gap problem of hyperbolic surfaces\cite{bourgain2018spectral}, it is a criterion of instability in $\text{AdS}_3/$CFT\cite{dong2018phase}, and it is an example of the connections between Dirichlet characters, algebraic curves, and automorphic forms\cite{bump2003introduction,knapp1997introduction,knapp2009first,knapp2009prerequisites,mueller2021genesis}. 
+The following are five top historical reasons that highlight the need of creating a systematic method for computing the critical exponent of the Poincar\'{e} series, albeit the technical specifics will not be discussed in the thesis. Let $G$ be a finitely generated Schottky group. 
 \begin{itemize}
-\item In prime geodesic theorem, $\delta(G)$ plays a role $z = \delta(G) + it$ which is similar to the line $z=1$ in the prime number theorem where the Riemann zeta function has its only singularity at the point $z = 1$ and no zeros on this line as proved by von Mangoldt in 1895.
-\item For the spectral gap problem of hyperbolic surfaces, in Bourgain and Dyatlov's paper, a hyperbolic surface has an essential spectral gap if it can meet some conditions in the theorem they prove, meaning that there are finitely many zeros within the region $\Re(s)>\frac{1}{2}-\beta=\delta(G)$.
-\item In $\text{AdS}_3/$CFT\cite{dong2018phase}, $\delta(G)$ is a criterion for the critical exponent of a scalar field to have stable solutions in 3d quantum gravity. Furthermore, $\delta(G)$ uniquely determines the first resonance of the corresponding Selberg zeta function of $G$, i.e. $\lambda_1=\delta(G)(1-\delta(G))$, where $\lambda_1$ is the lowest eigenvalue of eigenfunctions of the Laplacian operated on a Riemann surface (algebraic curve) $\mathbb{H}^2/G$.
-\item Since $\delta(G)$ is the convergence exponent of Poincar\'{e} series of $G$, and this series can be written into a Dirichlet $L-$function, plus eigenfunctions of $\mathbb{H}^2/G$ are automorphic forms, hence an exact connection between number theory and harmonic analysis might possibly be established. It maight also be viewed as an illustration of the theory of the Langlands program that Dirichlet characters, algebraic curves, and automorphic forms are all interrelated.
+\item In the prime geodesic theorem\cite{borthwick2007spectral}, $\delta(G)$ plays a role $z = \delta(G) + it$ which is similar to the line $z=1$ in the prime number theorem where the Riemann zeta function has its only singularity at the point $z = 1$ and no zeros on this line as proved by von Mangoldt in 1895.
+\item In the spectral gap problem of hyperbolic surfaces, a hyperbolic surface has an essential spectral gap if it can meet some conditions in the theorem they proved\cite{bourgain2018spectral}, meaning that there are finitely many zeros within the region $\Re(s)>\frac{1}{2}-\beta=\delta(G)$.
+\item In $\text{AdS}_3/\text{CFT}_2$, $\delta(G)$ is a criterion for the critical exponent of a scalar field to have stable solutions in 3d quantum gravity\cite{dong2018phase}. 
+\item It might also be viewed as an illustration of the philosophy of Langlands program that Dirichlet characters, algebraic curves, and automorphic forms are all interrelated\cite{bump2003introduction,knapp1997introduction,knapp2009first,knapp2009prerequisites,mueller2021genesis} because of the following three reasons:
+\begin{enumerate}
+\item[(i)] $\delta(G)$ uniquely determines the first resonance of the corresponding Selberg zeta function of $G$, and the first resonance is the lowest eigenvalue of eigenfunctions of the Laplacian operated on a Riemann surface (algebraic curve) $\mathbb{H}^2/G$,
+\item[(ii)] $\delta(G)$ is also the convergence exponent of Poincar\'{e} series of $G$, and this series can be written into a Dirichlet $L-$function, and
+\item[(iii)] eigenfunctions of $\mathbb{H}^2/G$ are automorphic forms.
+\end{enumerate}
+Hence, an exact connection between number theory and harmonic analysis might possibly be established. 
+\item Furthermore, since the Patterson-Sullivan measure $\mu$ is a constant multiple of the Hausdorff measure $H^{\delta}\vert_{\Lambda(G)}$, by Sullivan's theorem\cite{sullivan1984entropy}, we can have the Hausdorff dimension of the limit set of $G$ equals the critical exponent, i.e. $\dim_H\Lambda(G)=\delta(G)$.
 \end{itemize}
  
 
 
-Thus, the development of a technique to precisely compute the critical exponent $\delta(G)$ of a Poincar\'{e} series of a Schottky group $G$ has a long history--however, so far there is no explicit formula to describe $\delta(G)$, all we have are approximation. The link between a specific given finitely generated Schottky group $G$ to the exact value of its Poincar\'{e} exponent $\delta(G)$ has been missing since the notions were defined. 
+Thus, the development of a technique to precisely compute the critical exponent $\delta(G)$ of a Poincar\'{e} series of a Schottky group $G$ has a long history. However, except for the case when $\delta(G)=1$, so far there is no explicit formula to describe $\delta(G)$. All we have are approximation. The link between a specific given finitely generated Schottky group $G$ to the exact value of its Poincar\'{e} exponent $\delta(G)$ has been missing since the notions were defined. 
 
 
-The earliest modern investigations of the behavior of the exponent of convergent Poincar\'{e} series were done by Akaza and Beardon independently\cite{akaza1964poincara, akaza1966singular, beardon1966hausdorff, beardon1968exponent, beardon1971inequalities}. Their studies focused on determining the range of $\delta(G)$ of some specific type of discrete group $G$. In \cite{mcmullen1998hausdorff}, McMullen constructed an algorithm to estimate $\delta(G)$ numerically. However, its accuracy is upto $O(N)$, i.e. given $N$ digits, the accuracy can be approximately accurate after upto $C\cdot N$ iterations of applying McMullen's algorithm, where $C$ is a constant. Furthermore, in implementing the algorithm, one extra assumption was added in \cite{mcmullen1998hausdorff} which is it assumed that at each iteration all perpendicular bisectors are assumed to be having an identical diameter. This assumption is another source of errors in addition to the error generated due to the not enough large $N$, and the errors accumulated in each floating point operation on a computer system.
+The earliest modern investigations of the behavior of the exponent of convergent Poincar\'{e} series were done by Akaza and Beardon independently\cite{akaza1964poincara, akaza1966singular, beardon1966hausdorff, beardon1968exponent, beardon1971inequalities}. Their studies focused on determining the range of $\delta(G)$ of some specific type of discrete group $G$. In \cite{mcmullen1998hausdorff}, McMullen constructed an algorithm to estimate $\delta(G)$ numerically. However, its accuracy is upto $O(N)$, i.e. given $N$ digits, the accuracy can be approximately accurate after upto $C\cdot N$ iterations of applying McMullen's algorithm, where $C$ is a constant. Furthermore, in implementing the algorithm, one extra assumption was added in \cite{mcmullen1998hausdorff} which is it assumed that at each iteration all perpendicular bisectors are assumed to be having an identical diameter. This assumption is another source of errors in addition to the error generated due to the not large enough $N$, and the errors accumulated in each floating point operation on a computer system.
 
 
 In this thesis, a geometric method was developed to conjecture $\delta(G)$ exactly by computing the lower bound and upper bound of $\delta(G)$, where $G$ are some Schottky groups that satisfy a predefined set of conditions. Then, this might be the first time to derive an exact value of $\lambda_1$ of a specific Schottky group. 
@@ -472,7 +479,7 @@ In this thesis, a geometric method was developed to conjecture $\delta(G)$ exact
 
 Chapters 2, 3 and 4 provide the background for much of the paper. 
 
-In Chapter 2, we show how to build hyperbolic spaces in the Poincar'e disk model, as well as how to build automorphisms specified on this model. The methods of isometric circles and perpendicular bisectors, which correspond to functions defined on the Poincar\'{e} disk, are also described in Chapter 2 as our tools for building concepts in the next chapters.
+In Chapter 2, we show how to build hyperbolic spaces in the Poincar\'{e} disk model, as well as how to build automorphisms specified on this model. The methods of isometric circles and perpendicular bisectors, which correspond to functions defined on the Poincar\'{e} disk, are also described in Chapter 2 as our tools for building concepts in the next chapters.
 
 
 Following the introduction of functions defined on the Poincar\'{e} disk, Chapter 3 describes a specific collection of a certain type of functions called Schottky groups, which is a discrete subgroup of $\text{PSU}(1,1)$\footnote{Let $J=\begin{pmatrix}
@@ -489,16 +496,16 @@ $$
 =\left\lbrace \begin{pmatrix}
 \alpha &  \overline{\gamma}\\
 \gamma &  \overline{\alpha}
-\end{pmatrix}: \vert \alpha \vert^2-\vert \gamma\vert^2=1\right\rbrace$$ where $\alpha\in\mathbb{C}$ and $\gamma\in\mathbb{C}$. The center of $\text{U}(1,1)$ is $\lambda J$ where $\lambda = e^{i\phi}\in \text{U}(1), \phi\in\mathbb{R}$. Then, by solving $\lambda$ for $SU(1,1)$, we have the center of $\text{SU}(1,1)$ which is $\pm i J:=Z(\text{SU}(1,1))$. Then the projective special unitary group is $\text{PSU}(1,1):=\text{SU}(1,1)/Z(\text{SU}(1,1))$.} with derivations of Schottky group features.
+\end{pmatrix}: \vert \alpha \vert^2-\vert \gamma\vert^2=1\right\rbrace$$ where $\alpha\in\mathbb{C}$ and $\gamma\in\mathbb{C}$. The center of $\text{U}(1,1)$ is $\lambda J$ where $\lambda = e^{i\phi}\in \text{U}(1), \phi\in\mathbb{R}$. Then, by solving $\lambda$ for $SU(1,1)$, we have the center of $\text{SU}(1,1)$ which is $\pm i J:=Z(\text{SU}(1,1))$. Then the projective special unitary group is $\text{PSU}(1,1):=\text{SU}(1,1)/Z(\text{SU}(1,1))$.}.
 
 
 Chapter 4 investigates the critical exponent of Poincar\'{e} series and Sullivan's theorem that proved that the critical exponent of Poincar\'{e} series of every Schottky group equals the Hausdorff dimension of the limit set of the Schottky group. In addition, in Chapter 4, we looked at certain aspects of Poincar\'{e} exponents, such as how it is an invariant under a conformal map and how it is independent of the point chosen to be the input of the Poincar\'{e} series. 
 
 
-Chapter 5 studies a special case of Schottky groups that can meet our well-distributed configuration requirement. In this chapter, our main theorem establishes tight bounds on rank two well-distributed Schottky groups. Based on our understanding, this might be the first time in history that we have such constraints for Schottky groups other than the case when the Hausdorff dimension approaches the unit one. Based on our derivations of the main theorem, in this chapter, we also provides a conjecture for the exact form of Hausdorff dimension of the limit set of a rank two well-distributed Schottky group.
+Chapter 5 studies a special case of Schottky groups that can meet our well-distributed configuration requirement. In this chapter, our main theorem establishes tight bounds on rank two well-distributed Schottky groups. Based on our understanding, this might be the first time in history that we have this constraints for the critical exponent of Poincar\'{e} series of limit sets of Schottky groups other than the case when the limit sets coincide the boundary of the unit circle $\partial \mathbb{B}^2$. Based on our derivations of the main theorem, in this chapter, we also provide a conjecture for the exact form of the Hausdorff dimension of the limit set of a rank-2 well-distributed Schottky group.
 
 
-Chapter 6 provides an introduction of McMullen's algorithm which is by far the most accurate algorithm to approximate the the Hausdorff dimension of limit sets of Schottky groups numerically. However, because the original source code used to get the results was never disclosed, we re-implemented the method in C to reproduce the results to ensure that our understanding of Patterson-Sullivan theory and McMullen's technique were correct. Furthermore, based on McMullen's derivation, for small angles, we derived a result that coincides to the result generated by our conjecture is also presented in this chapter.
+Chapter 6 provides an introduction of McMullen's algorithm which is by far the most accurate algorithm to approximate the Hausdorff dimension of limit sets of Schottky groups numerically. However, because the original source code used to get the results was never disclosed, we re-implemented the method in C to reproduce the results to ensure that our understanding of Patterson-Sullivan theory and McMullen's technique were correct. Furthermore, based on McMullen's derivation, for small angles, we derived a result that coincides to the result generated by our conjecture is also presented in this chapter.
 
 
 
@@ -523,7 +530,7 @@ Chapter 6 provides an introduction of McMullen's algorithm which is by far the m
 \chapter{Two-dimensional hyperbolic geometry}
 
 
-The purpose of this chapter is to demonstrate how to construct hyperbolic spaces in the Poincar\'{e} disk disk model, as well as automorphisms given on this model. The methods of isometric circles and perpendicular bisectors, which relate to functions defined on the Poincar\'{e} disk disk, are also explained in Chapter 2 as tools for developing notions in the following chapters. We presume that readers are familiar with complex analysis and differential geometry.
+The purpose of this chapter is to demonstrate how to construct hyperbolic spaces in the Poincar\'{e} disk model, as well as the automorphisms given on this model. The methods of isometric circles and perpendicular bisectors, which relate to functions defined on the Poincar\'{e} disk, are also explained in Chapter 2 as tools for developing notions in the following chapters. We presume that readers are familiar with complex analysis and differential geometry.
 
 \section{The Poincar\'{e} Disk Model}
 
@@ -604,12 +611,12 @@ Furthermore, fixed points of $g$ are solutions of the equation $gz=z$, and their
 \end{definition}
 Equivalently, $I_g$ can also be defined by isometry invariant that $\vert \gamma z+\overline{\alpha}\vert =1$ if and only if $\vert g'(z)\vert=1$.
 
-There are a lot of advantages to use Poincar\'{e} disk model $\mathbb{B}^2$ instead of using the upper-half plane model in the development of the main theorems of this thesis. Results in not only the symmetry of the form of entries of isometries on this model, but also each isometry $g=\begin{pmatrix}
+There are a lot of advantages to using the Poincar\'{e} disk model $\mathbb{B}^2$ instead of using the upper-half plane model in the development of the main theorems of this thesis. Results in not only the symmetry of the form of entries of isometries on this model, but also each isometry $g=\begin{pmatrix}
 \alpha &  \overline{\gamma}\\
 \gamma &  \overline{\alpha}
 \end{pmatrix}$ with $\vert \alpha\vert^2-\vert \gamma\vert^2=1$ has its own isometric circle as one of reflection geodesic lines to form the M\"{o}bius map $g$ on $\mathbb{B}^2$.
 \begin{theorem}\label{Isometric_thm}
-If take $z=0$, then the perpendicular bisector of $[0,g^{-1}0]$, i.e. $\left\lbrace z\in\mathbb{B}^2 : d(z,0)=d(z,g^{-1}0)\right\rbrace$ is the isometric circle of $g$ denoted as $I_g$. Furthermore, the isometric circles $I_g$ and $I_{g^{-1}}$ have an identical radius $\frac{1}{\vert c\vert}$.
+If take $z=0$, then the perpendicular bisector of $[0,g^{-1}0]$, i.e. $\left\lbrace z\in\mathbb{B}^2 : d(z,0)=d(z,g^{-1}0)\right\rbrace$ is the isometric circle of $g$ denoted as $I_g$. Furthermore, the isometric circles $I_g$ and $I_{g^{-1}}$ have an identical radius $\frac{1}{\vert \gamma\vert}$.
 \end{theorem}
 \begin{proof} Let $g=\begin{pmatrix}
 \alpha &  \overline{\gamma}\\
@@ -644,9 +651,9 @@ Hence,
 
 \section{Perpendicular Bisectors}
 
-In dimension $2$, the perpendicular bisector $M_{z_0=0}(g)$ and the isometric circle $I_{g^{-1}}$ is identical if we are using Poincar\'{e} disk model, i.e. in $\mathbb{B}^2$. In general, for instance, if $z_0\neq 0$, perpendicular bisectors need not to be isometric spheres, but have a more general usage which can also give an alternative proof of main theorems of this thesis.
+In dimension $2$, the perpendicular bisector $M_{z_0=0}(g)$ and the isometric circle $I_{g^{-1}}$ is identical if we are using Poincar\'{e} disk model, i.e. in $\mathbb{B}^2$. In general, for instance, if $z_0\neq 0$, perpendicular bisectors need not be isometric spheres, but have a more general usage which can also give an alternative proof of the main theorems of this thesis.
 
-The following results are proved in two-dimensional hyperbolic plane, but can be generalized to higher dimensions.
+The following results are proved in a two-dimensional hyperbolic plane, but can be generalized to higher dimensions.
 
 
 Recall the notation $M_{z_0}(g)$ stands for the perpendicular bisector of the geodesic $(0,g0)$, $M_{z_0}(g^{-1})$ is the perpendicular bisector of the geodesic $(0,g^{-1}0)$, $D_{z_0}(g)$ is the closed half-plane in $\mathbb{H}^2$ bounded by $M_{z_0}(g)$, and $D_{z_0}(g^{-1})$ is the closed half-plane in $\mathbb{H}^2$ bounded by $M_{z_0}(g^{-1})$.
@@ -672,11 +679,11 @@ m_1,\vartheta_1\arrow{d}{\Phi} & m_2,\vartheta_2\arrow{d}{\Phi}
 M_1 \arrow{r}{g}& \arrow{l}{g^{-1}} M_2
 \end{tikzcd}
 \]
-Define $\Omega$ as a composition of $\Upsilon$ and $\Phi$: $\Omega:=\Upsilon\Phi$. Therefore, $$ \Omega g = g \Omega.$$ The use of the above result is that then the operator $g$ now can be directly applied on $M_i$. Whence, $g(M_{z_0}(g^{-1}))=M_{z_0}(g)$ and $g^{-1}(M_{z_0}(g))=M_{z_0}(g^{-1}).$
+Define $\Omega$ as a composition of $\Upsilon$ and $\Phi$: $\Omega:=\Upsilon\Phi$. Therefore, $$ \Omega g = g \Omega.$$ Then the operator $g$ now can be directly applied on $M_i$. Whence, $g(M_{z_0}(g^{-1}))=M_{z_0}(g)$ and $g^{-1}(M_{z_0}(g))=M_{z_0}(g^{-1}).$
 
-(iv) To check the interior, we can verify it by taking a point in the region say outside of $M_{z_0}(g)$ and check that it will be mapped into the interior of $M_{z_0}(g)$; however, this is clearly true, result from $g$ is a continuous open map, and it is already known that $g(z_0)\in M_{z_0}(g)$. Hence, this result automatically follows once the commutativity $\Omega g = g \Omega$ is proved.
+(iv) To check the interior, we can verify it by taking a point in the region outside of $M_{z_0}(g)$ and check that it will be mapped into the interior of $M_{z_0}(g)$. Since $g$ is a continuous open map, and it is already known that $g(z_0)\in M_{z_0}(g)$, this result automatically follows after the commutativity $\Omega g = g \Omega$ is proved.
 
-(v) Finally, since $g$ is an invertible continuous open map, and the input is a connected region, the exterior of $M_{z_0}(g)$ will be mapped into the interior of $M_{z_0}(g)$ except the interior of $M_{z_0}(g^{-1})$, as $g(z_0)\in M_{z_0}(g)$. To show it is a bijection, recall $g$ a combination of reflection, and in this case, it can be decomposed to a reflection in $M_{z_0}(g)$ to be the last operation, so $M_{z_0}(g)$ is like a mirror. In $\mathbb{R}^2$, a reflection is a bijection. 
+(v) Finally, since $g$ is an invertible continuous open map, and the input is a connected region, the exterior of $M_{z_0}(g)$ will be mapped into the interior of $M_{z_0}(g)$ except the interior of $M_{z_0}(g^{-1})$, as $g(z_0)\in M_{z_0}(g)$. To show it is a bijection, recall $g$ a combination of reflection, and in this case, it can be decomposed into a product of reflections, and in $\mathbb{R}^2$, a reflection is a bijection.   
 \end{proof}
 
 Remark: Isometric circles also have this property; actually, in $\mathbb{B}^2$ isometric circle of $g$ is identical to the perpendicular bisector $M_{0}(g^{-1})$.
@@ -705,7 +712,7 @@ The group Poincar\'{e} used to build these discontinuous subgroup is $\text{Isom
 
 Topological group is defined by continuity. Recall the definition of continuous functions: If for every open set $U\subseteq G$, $g^{-1}(U)$ is open in the domain of $g$, then $g$ is called \textit{continuous}. \textit{A topological group} is a group $G$ that is also a topological space such that multiplication $(g,h)\mapsto gh$ and inversion $g\mapsto g^{-1}$ in $G$ are both continuous functions. 
 
-Now let us go back to the beginning of this section, to understand why $\text{Isom}^+(\mathbb{H}^2_\mathbb{R})$ is topological. Consider it is isomorphic to a projective group, that is $\text{PSU}(1,1)$. $\text{PSU}(1,1)$ is a quotient group inherits subspace topologies from $\text{SU}(2,\mathbb{C})$.% or $\text{SL}(2,\mathbb{C})$. 
+Now let us go back to the beginning of this section, to understand why $\text{Isom}^+(\mathbb{H}^2_\mathbb{R})$ is topological. Consider it is isomorphic to a projective group, that is $\text{PSU}(1,1)$. The projective special unitary group $\text{PSU}(1,1)$ is a quotient group inherits subspace topologies from $\text{SU}(2,\mathbb{C})$.% or $\text{SL}(2,\mathbb{C})$. 
 
 Further, in general, for all $n\geq 2$ dimensions, define a norm on $GL(n,\mathbb{C})$:
 $$
@@ -727,24 +734,24 @@ Let $\mathcal{F}=\left\lbrace M_i:i\in I\right\rbrace$ be a family of subsets of
 \end{definition}
 By the definition of locally finite, 
 \begin{definition}
-Let $G$ be a topological group. The group actions of $G$ are discontinuous on a topological space $X$ if and only if for all orbits of $G$, i.e. considering $G(x)$, for all $x\in X$, the family of $G(x)$ is locally finite.
+Let $G$ be a topological group. \textit{The group actions of $G$ are discontinuous} on a topological space $X$ if and only if for all orbits of $G$, i.e. considering $G(x)$, for all $x\in X$, the family of $G(x)$ is locally finite.
 \end{definition}
 Equivalently, $G$ acts properly discontinuous on $X$ if $G$ acts on $X$ and for every compact set $K$ of $X$, there exist only finitely many $g\in G$ such that
 $$
 g(K)\cap K\neq \emptyset.
 $$
-To begin the topic of discrete groups, examine a direct conclusion of the previous definition: if the action of a group $G$ on $X$ is discontinuous, then for all $x\in X$, $G(x)\subset X$ is a close discrete subset. 
+To begin the topic of discrete groups, examine a direct conclusion of the previous definition: if the action of a group $G$ on $X$ is discontinuous, then for all $x\in X$, $G(x)\subset X$ is a closed discrete subset. 
 
 It is analogous to Montel's theorem if the family $\mathcal{F}$ (recall Definition \ref{normal family}) is regarded as a normal family using the following definition:
 \begin{definition}
-The region of discontinuity of $G$ is denoted by $\Omega(G)$ which is of all the points in $\mathbb{B}^{2}\cup\mathbb{S}^{1}$ where $G$ acts discontinuously.
+\textit{The region of discontinuity of $G$} is denoted by $\Omega(G)$ which is of all the points in $\mathbb{B}^{2}\cup\mathbb{S}^{1}$ where $G$ acts discontinuously.
 \end{definition}
 Remark: for each point $x\in\Omega(G)$, there is a neighborhood $U_x$ that intersects only finitely many points in its orbit $G(x)$. Later on, once the limit set of $G$ and ordinary set $O(G)$ are defined, $\Omega(G)=\mathbb{B}^{2}\cup\mathbb{S}^{1}\setminus L(G)$, and $O(G)=\Omega(G)\setminus \mathbb{B}^{2}$.
 
-Now, define discrete group as follows: a subgroup $G$ of a topological group $\Gamma$ is \textit{discrete} if $G$ has no accumulation points in $\Gamma$. Furthermore, since the focus of this thesis is on sense-preserving isometry groups of hyperbolic $n$-space, so we can further focus on discrete groups which are also sense-preserving isometry group such as $\text{M}(\mathbb{B}^2)$, or $\text{M}(\mathbb{S}^{n-1})$ (by a stereographic projection).
+Now, define a discrete group as follows: a subgroup $G$ of a topological group $\Gamma$ is \textit{discrete} if $G$ has no accumulation points in $\Gamma$. Furthermore, since the focus of this thesis is on sense-preserving isometry groups of hyperbolic $n$-space, so we can further focus on discrete groups which are also sense-preserving isometry group such as $\text{M}(\mathbb{B}^2)$, or $\text{M}(\mathbb{S}^{n-1})$ (by a stereographic projection).
 By considering a subgroup $G$ of $\text{M}(\mathbb{B}^2)$ (or $\text{M}(\mathbb{S}^{1})$) is a topological group, i.e. a topological space equipped with the metric induced by the norm $\left\vert A \right\vert := \left( \sum\limits_{i,j=1}^n \vert a_{ij}\vert^2 \right)^{\frac{1}{2}}$, we define the following
 \begin{definition}%\cite{nicholls1989ergodic}
-A subgroup $G$ of a topological group $\Gamma$ is discrete in which the relative topology of $G$ is discrete.
+A subgroup $G$ of a topological group $\Gamma$ is \textit{discrete} in which the relative topology of $G$ is discrete.
 %the identity of $G$ has a neighborhood whose intersection with $G$ reduces to the identity.
 \end{definition}
 Remark: This is equivalent to say, there exists an open neighborhood $U_{\id}$ of $\id\in G$ such that $G\bigcap U_{\id}=\left\lbrace \id \right\rbrace$. Or, there exists an open neighborhood $U_{\id}$ of $\id$ such that for each $A\in \Gamma$, the  cardinality of the set $G\bigcap g(U_{\id})$ is less than $2$.
@@ -763,12 +770,12 @@ The following conditions are equivalent: (i) $G<\text{Isom}^+(\mathbb{H}^2_\math
 Recalling and continuing from the end of the section\ref{Properly Discontinuous Actions}, there is no accumulation point inside hyperbolic space due to the necessary condition of being a discontinuous group, and since properly discontinuous group $G$ can act improperly on the boundary, thus on the boundary of the hyperbolic space, there will be accumulations in the group orbits, and the collection set of all these accumulations is called the limit set of the group denoted by $L(G)$.
 
 \begin{definition}[Limit Point and Limit Set]\cite{ahlfors1981mobius}
-Let $G$ be a discrete subgroup of sense-preserving isometry group $\text{Isom}^+(\mathbb{B}^{2})$. The \textit{limit set} of $G$ is denoted by $L(G)$, is the set of all accumulation points in the intersection of all orbits $G(x)$ for all $x\in \mathbb{B}^2\cup \mathbb{S}^{1}_\infty$, where $\mathbb{S}^{1}_\infty$ is the sphere at infinity and it also represents the boundary of the hyperbolic space $\mathbb{B}^{2}$.
+Let $G$ be a discrete subgroup of the sense-preserving isometry group $\text{Isom}^+(\mathbb{B}^{2})$. The \textit{limit set} of $G$ is denoted by $L(G)$, is the set of all accumulation points in the intersection of all orbits $G(x)$ for all $x\in \mathbb{B}^2\cup \mathbb{S}^{1}_\infty$, where $\mathbb{S}^{1}_\infty$ is the sphere at infinity and it also represents the boundary of the hyperbolic space $\mathbb{B}^{2}$.
 
 \end{definition}
 
 \begin{definition}\label{elementary}
-A subgroup $G$ of $\text{Isom}^+(\mathbb{B}^{2})$ is elementary if and only if $G$ has a finite orbit in the closed disk $\overline{\mathbb{B}^{2}}$.
+A subgroup $G$ of $\text{Isom}^+(\mathbb{B}^{2})$ is \textit{elementary} if and only if $G$ has a finite orbit in the closed disk $\overline{\mathbb{B}^{2}}$.
 \end{definition}
 
 
@@ -801,14 +808,14 @@ If $G$ is a discrete group preserving either $\mathbb{B}^2$, and $a\in \mathbb{B
 
 A straightforward proof\cite[p.79]{ahlfors1981mobius} follows Theorem \ref{ahlfors thm} which is an application of isometric circles, i.e. this theorem can also be proved by using lemma \ref{converges to zero}. 
 
-The set of all accumulation points of $G(a_i), a_i\in \widehat{\mathbb{B}^2}$ is denoted by $L_{a_i}$. If we take union of all points $a_i\in \overline{\mathbb{B}^2}$, then $L(G)=\bigcup_{a_i} L_{a_i}$. The following theorem shows that it only takes one point to obtain the whole limit set $L(G)$, and it does not depend on the choice of the point (hence $L(G)$ can be the group invariant). $L(G)$ and all accumulation sets $\Lambda_{z_i}$ (derived set of $G(z_i)$) are closed, since each set has all of their limit points by definition. 
+The set of all accumulation points of $G(a_i), a_i\in \widehat{\mathbb{B}^2}$ is denoted by $L_{a_i}$. If we take the union of all points $a_i\in \overline{\mathbb{B}^2}$, then $L(G)=\bigcup_{a_i} L_{a_i}$. The following theorem shows that it only takes one point to obtain the whole limit set $L(G)$, and it does not depend on the choice of the point (hence $L(G)$ can be the group invariant). $L(G)$ and all accumulation sets $\Lambda_{z_i}$ (derived set of $G(z_i)$) are closed, since each set has all of their limit points by definition. 
 \begin{definition}
 The complement $\partial \mathbb{H}^n_\mathbb{R} \cup\left\lbrace \infty \right\rbrace\setminus L(G)$, or $\mathbb{S}^{1}_\infty\setminus L(G)$ is called \textit{the ordinary set} denoted by $O(G)$. 
 \end{definition}
 
 We may define the following using the notion of ordinary set:
 \begin{definition}
-If $G$ is a discrete subgroup of $\text{Isom}^+(\mathbb{B}^2)$, and $O(G)=\emptyset$, then $G$ is of the first kind. Otherwise, $G$ is of the second kind. Furthermore, if $\text{Card}(L(G))\leq 2$, then $G$ is elementary; otherwise, $G$ is non-elementary.
+If $G$ is a discrete subgroup of $\text{Isom}^+(\mathbb{B}^2)$, and $O(G)=\emptyset$, then $G$ is of \textit{the first kind}. Otherwise, $G$ is of \textit{the second kind}. Furthermore, if $\text{Card}(L(G))\leq 2$, then $G$ is \textit{elementary}; otherwise, $G$ is \textit{non-elementary}.
 \end{definition}
 
 If $G$ is non-elementary, then there are infinite points in $L(G)$. If $G$ is of second kind then $O(G)$ is an open dense subset of $\mathbb{S}^{1}_\infty$, and $L(G)$ is a nowhere dense closed subset of $\mathbb{S}^{1}_\infty$\cite[Theorem 12.2.7]{ratcliffe1994foundations}.
@@ -867,7 +874,7 @@ If $\alpha\notin \mathbb{Q}$, then every orbit is dense.
 
 Therefore, from the above lemma we also have one more useful result for checking if a given group is discrete:
 \begin{lemma}
-if there exist $g_i$ and $g_j$, $i\neq j$, in a given generator set of a group $G$, and there exists an isomorphism such that the subgroup $\left\langle g_i,g_j\right\rangle<G$ is isomorphic to $\left\langle a^m,b^n\right\rangle$ where $a,b\in\mathbb{R}$ and $\frac{m}{n}\notin\mathbb{Q}$, then $G$ is not discrete.
+If there exist $g_i$ and $g_j$, $i\neq j$, in a given generator set of a group $G$, and there exists an isomorphism such that the subgroup $\left\langle g_i,g_j\right\rangle<G$ is isomorphic to $\left\langle a^m,b^n\right\rangle$ where $a,b\in\mathbb{R}$ and $\frac{m}{n}\notin\mathbb{Q}$, then $G$ is not discrete.
 \end{lemma}
 
 
@@ -907,7 +914,7 @@ Given $D_1,...,D_{2m}$ disjoint closed disks which intersect the boundary of the
 \item $T_i (\mathbb{B}^2\setminus D^{\circ}_{i+m}) = D_{i}$
 \item $T_i^{-1}\left( \mathbb{B}^2\setminus D^{\circ}_{i}\right)=D_{i+m}$.
 \end{enumerate}
-Then, a {\it Schottky group $\Gamma$ of rank $m$} is finitely generated by $T_1,...,T_m$. We will denote it by  
+Then, \textit{a Schottky group $\Gamma$ of rank $m$} is finitely generated by $T_1,...,T_m$. We will denote it by  
 $$
 \Gamma = \langle T_1,...,T_m\rangle. 
 $$
@@ -916,7 +923,7 @@ We denote a cyclic notation for the group generators by $T_{i+m} = T_i^{-1}$.
 
 To further study some properties of the above definition, let us define the notion of pencil:
 \begin{definition}\label{family of isometric circles}
-Let $L$ and $L'$ be two disjoint geodesics, and let $L_0$ be the common orthogonal geodesic of $L$ and $L'$. We define $\Phi$ to be the family of all geodesics which are orthogonal to $L_0$. %and %$\mathcal{Hyp}$ to be the family of all hypercycles which have the same end-points as $L_0$.
+Let $L$ and $L'$ be two disjoint geodesics, and let $L_0$ be the common orthogonal geodesic of $L$ and $L'$. We define $\Phi$ to be \textit{the family of all geodesics which are orthogonal to $L_0$}. %and %$\mathcal{Hyp}$ to be the family of all hypercycles which have the same end-points as $L_0$.
 \end{definition}
 
 
@@ -932,10 +939,10 @@ Then we can have the following properties\cite[section 7.32, 7.34]{beardon2012ge
 
 Now, since for each group generator of a Schottky group, we have two conditions $T_i (\mathbb{B}^2\setminus D^{\circ}_{i+m}) = D_{i}$ and $T_i^{-1}\left( \mathbb{B}^2\setminus D^{\circ}_{i}\right)=D_{i+m}$, we know $\partial D_i$ and $\partial D_{i+m}$ are two geodesics in the pencil determined by $\partial D_i$ and $\partial D_{i+m}$ for $T_i$. Furthermore, we can see that the way to determine the same Schottky group is not unique. Because, for the same set of group generators, for each $T_i$, there are infinite many choices to pick two geodesics $L_k$ and $L_j$ in the pencil of $T_i$ determined by $L_1$ and $L_2$ such that there are two M\"{o}bius reflections $T_{L_{k}}$ and $T_{L_{j}}$ compose $T_i=T_{L_{k}}\circ T_{L_{j}}$.
 
-This can inspire us to think that what if the isometric circle of $T_i$ is in the pencil $\Phi$ now that we have knew several useful properties of isometric circles. So, we have the following theorem for Schottky group (originally it is a definition of a restricted type of Schottky group that has several useful properties due to the way $\Gamma$ is generated in \cite{dal2010geodesic}):
+This can inspire us to think about what if the isometric circle of $T_i$ is in the pencil $\Phi$ now that we have known several useful properties of isometric circles. So, we have the following theorem for Schottky group (originally it is a definition of a restricted type of Schottky group that has several useful properties due to the way $\Gamma$ is generated in \cite{dal2010geodesic}):
 
 \begin{theorem}\label{thm schottky}
-Let $\left\lbrace T_i: 1\leq i \leq m, m\geq 2\right\rbrace$ be a set of non-elliptic isometries of $\text{PSU}(1,1)$ and each $T_i$ and $T_j$, $i\neq j$, do not have a common fixed point. Take $z_0\in \mathbb{B}^2$ be a point that does not fixed by each $T_i$. Then, if for each $T_i$ we denote the half-spaces $D_0(T_i^{\pm}):=D(T_i^{\pm})$, for $i=1,...,m$ satisfy $
+Let $\left\lbrace T_i: 1\leq i \leq m, m\geq 2\right\rbrace$ be a set of non-elliptic isometries of $\text{PSU}(1,1)$ and each $T_i$ and $T_j$, $i\neq j$, do not have a common fixed point. Take $z_0\in \mathbb{B}^2$ be a point that is not fixed by each $T_i$. Then, if for each $T_i$ we denote the half-spaces $D_0(T_i^{\pm}):=D(T_i^{\pm})$, for $i=1,...,m$ satisfy $
 \left( \overline{D(T_i)\cup D(T_i^{-1}) }\right)\cap \left( \overline{D(T_j)\cup D(T_j^{-1})}\right)=\emptyset, 
 \forall i\neq j\in\left\lbrace 1,...,m\right\rbrace,$ then $\left\langle T_i, 1\leq i \leq m\right\rangle$ is a Schottky group.
 \end{theorem}
@@ -947,9 +954,9 @@ By lemma \ref{matryoshka}, we have $T_i ({\mathbb  B}^2\setminus D^{\circ}_{i+m}
 \gamma &  \overline{\alpha}
 \end{pmatrix}$, then the radius of the perpendicular bisector (isometric circle) of $T_i$ is $\frac{1}{\vert \gamma \vert}$ which is the same as the radius of the perpendicular bisector (isometric circle) of $T_i^{-1}$, i.e. the radii of $\partial D_i$ and $\partial D_{i+m}$ are identical. However, in the definition of Schottky group, $\partial D_i$ and $\partial D_{i+m}$ can have distinct radii which results in a configuration that does not have the symmetry that Theorem \ref{thm schottky} has.
 
-Additionally, compared to definition \ref{def schottky}, in \cite{borthwick2007spectral}, Schottky group is defined on $\mathbb{H}^2$, with the center of each $D_{i}$ on real line. Now, let us prove that when a Schottky group is generated by conditions stated in Theorem \ref{thm schottky}, 
+Additionally, compared to definition \ref{def schottky}, in \cite{borthwick2007spectral}, Schottky group is defined on $\mathbb{H}^2$, with the center of each $D_{i}$ on the real line. Now, let us prove that when a Schottky group is generated by conditions stated in Theorem \ref{thm schottky}, 
 \begin{lemma}\label{the center of each isometric circle}
-it is guaranteed that the center of each isometric circle of $T_i$ must not on the unit circle $\partial \mathbb{B}^2$. 
+it is guaranteed that the center of each isometric circle of $T_i$ must not be on the unit circle $\partial \mathbb{B}^2$. 
 \end{lemma}
 \begin{proof}
 Since for $T_i$ we have $\vert \alpha\vert^2-\vert \gamma\vert^2=1$, hence $\vert \alpha\vert>\vert \gamma \vert$, and this implies 
@@ -976,7 +983,7 @@ The following lemma demonstrates that we only need two non-elliptic isometries t
 Let $g$ and $g'$ be two non-elliptic isometries in $G$ which have no common fixed points. Then there exists $N>0$ such that $g^{N}$ and $g'^{N}$ generate a Schottky group $S(g^{N},g'^{N})$.
 \end{lemma}
 \begin{proof}
-This follows directly from lemma \ref{bounded closed half-plane}, \ref{matryoshka} and \ref{hyperbolic lines}.
+This follows directly from the lemma \ref{bounded closed half-plane}, \ref{matryoshka} and \ref{hyperbolic lines}.
 \end{proof}
 
 
@@ -995,7 +1002,7 @@ The goal of this chapter is to study the critical exponent of Poincar\'{e} serie
 
 Let $g_1,...,g_m$ be isometries of $\text{PSU}(1,1)$ on ${\mathbb B}^2$ such that $G = \langle g_1,...,g_m\rangle$ generates a classical Schottky group\footnote{It is a classical Schottky group acts on two dimensional hyperbolic space $\mathbb{B}^2$, and it is a discrete subgroup of isometries of the space.} of rank $m$. 
 
-Our goal is to compute the exponent of convergence of the Poincare series for the Schottky group.
+Our goal is to compute the exponent of convergence of the Poincar\'{e} series for the Schottky group.
 $$
 \mathcal{P}(G,  t) = \sum_{g\in G} e^{-t \rho_{\mathbb{B}^2}^2(z,gw)}.
 $$
@@ -1043,7 +1050,7 @@ It is a direct application of isometric circles.
 \end{proof}
 
 
-Since the proof of the following theorem does not depend on dimension of the hyperbolic space, it should be true in general $n$-dimensional hyperbolic space which will be introduced in later chapters.
+Since the proof of the following theorem does not depend on the dimension of the hyperbolic space, it should be true in general $n$-dimensional hyperbolic space which will be introduced in later chapters.
 \begin{theorem}\label{n-dim poincare series}
 Let $G$ be a Schottky group. Take $A\in\text{Isom}^+(\mathbb{B}^n)$. Denote $\delta(G)$ be the exponent of convergence of $\mathcal{P}(G,t)$, and $\delta(\Gamma)$ be the Poincar\'{e} exponent of $\mathcal{P}(\Gamma,t)$, where $\Gamma=AGA^{-1}.$ Then, $\delta(G)=\delta(\Gamma).$
 \end{theorem}
@@ -1051,7 +1058,7 @@ Let $G$ be a Schottky group. Take $A\in\text{Isom}^+(\mathbb{B}^n)$. Denote $\de
 Let $T_i=Ag_iA^{-1}$
 By lemma \ref{lemma 3.5}, and since $\sum_{g_i\in G<\text{Isom}^+(\mathbb{B}^2)}\left( 1-g_iz\right)^{s}$,\\ $\sum_{g_i\in G<\text{Isom}^+(\mathbb{B}^2)}e^{-s\rho_{\mathbb{B}^2}(z,g_iz)}$ and $\sum_{g_i\in G<\text{Isom}^+(\mathbb{B}^2)}\vert g_i'(z)\vert^{s}$ all have the same convergent behavior, in $n$-dimension with the same type of functions, let $\text{arccosh}(x_{g_i})=\rho_{\mathbb{B}^2}(z,g_iz)$, and $\text{arccosh}(x_{T_i})=\rho_{\mathbb{B}^2}(z,T_iz)$, then since they are both inverse hyperbolic cosine functions, the two summands of the two series in $n$-dimension are $
 \frac{e^{-s\cdot \text{cosh}^{-1}(x_{g_i})}}{e^{-s\cdot\text{cosh}^{-1}(x_{T_i})}}=\frac{f_s(x_{g_i})}{f_s(x_{T_i})}\longrightarrow 1\in(0,\infty)
-$ as $i\to \infty$. Thus, by applying Limit Comparison Test, two series both converge or diverge. Hence, we complete the proof.
+$ as $i\to \infty$. Thus, by applying the Limit Comparison Test, two series both converge or diverge. Hence, we complete the proof.
 \end{proof}
 
 
@@ -1062,7 +1069,7 @@ Our next goal is to prove that let $G$ be a Schottky group, then the Hausdorff d
 Firstly, we have to define Hausdorff measure:
 
 \begin{definition}
-For $A\subset \partial\mathbb{B}^2$, the $s-$dimensional Hausdorff measure is 
+For $A\subset \partial\mathbb{B}^2$, \textit{the $s-$dimensional Hausdorff measure} is 
 $$
 H^s\left(A\right):=\lim\limits_{\epsilon\to 0}\inf\left\lbrace \sum\limits_{j}\vert I_j\vert^s:A\subset \cup_j I_j,\vert I_j\vert<\epsilon \right\rbrace.
 $$
@@ -1075,7 +1082,7 @@ H^s\left(A\right)=\begin{cases}
       \infty, &\text{if } s>\alpha. 
    \end{cases}
 $$
-and the Hausdorff dimension is 
+and \textit{the Hausdorff dimension} is 
 $$
 \dim_{H}A:=\alpha.
 $$
@@ -1087,43 +1094,43 @@ where $\nu_z$ is the point measure at $z\in\mathbb{B}^2$ with total mass one.
 
 Recall the Banach-Alaoglu theorem, i.e. the closed unit ball of the dual space (the space of Borel measures on $\overline{\mathbb{B}^2}$ with norm given by the total mass) of a normed vector space is compact in the weak$-^{\ast}$topology, we can have the limiting measure as follows:
 \begin{definition}
-There exists a sequence $s_j\to \delta$ such that $\mu^{(s_j)}$ converge weakly to a limiting measure, and this measure is called the Patterson-Sullivan measure associated to $G$:
+There exists a sequence $s_j\to \delta(G)$ such that $\mu^{(s_j)}$ converge weakly to a limiting measure, and this measure is called \textit{the Patterson-Sullivan measure associated to $G$}:
 $$
-\mu:=\lim\limits_{s_j\to\delta}\mu^{(s_j)}.
+\mu:=\lim\limits_{s_j\to\delta(G)}\mu^{(s_j)}.
 $$
 \end{definition}
 Patterson\cite{patterson1976limit} proves that 
 $$
-\mathcal{P}(G,t)>\frac{C}{t-\delta}
+\mathcal{P}(G,t)>\frac{C}{t-\delta(G)}
 $$
-where $C$ is a constant, meaning that Poincar\'{e} series diverges at $t=\delta$.
+where $C$ is a constant, meaning that Poincar\'{e} series diverges at $t=\delta(G)$.
 
 
 By Theorem 1 in \cite{sullivan1984entropy}:
 \begin{theorem}\label{Theorem14.14inBorthwick}%14.1
-Let $G$ be a finitely generated Schottky group. The Patterson-Sullivan measure $\mu$ is a constant multiple of the Hausdorff measure $H^{\delta}\vert_{\Lambda(G)}$. Furthermore, $\dim_H\Lambda(G)=\delta.$
+Let $G$ be a finitely generated Schottky group. The Patterson-Sullivan measure $\mu$ is a constant multiple of the Hausdorff measure $H^{\delta(G)}\vert_{\Lambda(G)}$. Furthermore, $\dim_H\Lambda(G)=\delta(G).$
 \end{theorem}
 
 \noindent\textbf{Proof idea:}
 
 For $q\in L(G)$, let $I_q$ denote an interval in $\partial \mathbb{B}^2$ centered at $q$. Based on Sullivan's shadow lemma\cite{borthwick2007spectral}[Lemma 14.12], it can be showed that if there exists $\epsilon>0$ such that for any $\vert I_q\vert<\epsilon$, we have 
 $$
-\mu\left(I_q\right)\asymp \vert I_q\vert^\delta,
+\mu\left(I_q\right)\asymp \vert I_q\vert^\delta(G),
 $$
-uniformly in $q$. If $T\in G$, the the pullback measure $T^\ast \mu$ is defined by $T^\ast \mu(E):=\mu(TE)$. Then, on one hand, since for a M\"{o}bius transformation $T\in G$ the local distortion of Euclidean length is given by $\vert T'\vert$, thus $T^\ast H^s=\vert T' \vert^s H^s$. On the other hand, for Patterson-Sullivan measure, for $T\in G$, we have $T^\ast \mu=\vert T' \vert^\delta \mu$ \cite{borthwick2007spectral}[Lemma 14.2]. This hints that Patterson-Sullivan measure $\mu$ transforms under the action of $G$ like the Hausdorff measure of dimension $\delta$. Since $\mu$ is absolutely continuous with respect to $H^\delta$, we have $d\mu=kdH^\delta$ for some function $k$ on $L(G)$. By ergodicity \cite{borthwick2007spectral}[Corollary 14.11], $k$ is constant.
+uniformly in $q$. If $T\in G$, the the pullback measure $T^\ast \mu$ is defined by $T^\ast \mu(E):=\mu(TE)$. Then, on one hand, since for a M\"{o}bius transformation $T\in G$ the local distortion of Euclidean length is given by $\vert T'\vert$, thus $T^\ast H^s=\vert T' \vert^s H^s$. On the other hand, for Patterson-Sullivan measure, for $T\in G$, we have $T^\ast \mu=\vert T' \vert^{\delta(G)} \mu$ \cite{borthwick2007spectral}[Lemma 14.2]. This hints that Patterson-Sullivan measure $\mu$ transforms under the action of $G$ like the Hausdorff measure of dimension $\delta(G)$. Since $\mu$ is absolutely continuous with respect to $H^{\delta(G)}$, we have $d\mu=kdH^{\delta(G)}$ for some function $k$ on $L(G)$. By ergodicity \cite{borthwick2007spectral}[Corollary 14.11], $k$ is constant.
 Recall the definition of Hausdorff measure,
 $$
 H^s\left(A\right):=\lim\limits_{\epsilon\to 0}\inf\left\lbrace \sum\limits_{j}\vert I_j\vert^s: A\subset_j I_j,\vert I_j\vert<\epsilon \right\rbrace
 $$
 where $A\subset L(G).$
 
-Furthermore, we know that when $s\to \delta$, we have $\mu(L(G))=1$. Hence, we have
+Furthermore, we know that when $s\to \delta(G)$, we have $\mu(L(G))=1$. Hence, we have
 $$
-\int_{L(G)} d\mu =\lim\limits_{s\to\delta}\mu^{(s)}(L(G)) = \mu(L(G))=1 = k \int_{L(G)} dH^\delta.
+\int_{L(G)} d\mu =\lim\limits_{s\to\delta(G)}\mu^{(s)}(L(G)) = \mu(L(G))=1 = k \int_{L(G)} dH^{\delta(G)}.
 $$
 
 
-If $s>\delta$, then we have $\sum\vert I_q\vert^s\to \infty$, so $H^s\left(L(G)\right)\to \infty$; and if $s<\delta,$ we have $\sum\vert I_q\vert^s\to 0$, thus $H^s\left(L(G)\right)\to 0$. Therefore, $\delta$ is the Hausdorff dimension of $L(G)$.
+If $s>\delta(G)$, then we have $\sum\vert I_q\vert^s\to \infty$, so $H^s\left(L(G)\right)\to \infty$; and if $s<\delta(G),$ we have $\sum\vert I_q\vert^s\to 0$, thus $H^s\left(L(G)\right)\to 0$. Therefore, $\delta(G)$ is the Hausdorff dimension of $L(G)$.
 
 
 
@@ -1131,13 +1138,13 @@ If $s>\delta$, then we have $\sum\vert I_q\vert^s\to \infty$, so $H^s\left(L(G)\
 %$$
 %\delta(G)=\dim_H(L(G))=\dim_B(L(G))
 %$$
-%where $\dim_B(L(G))$ denotes box dimension of the limit set of the group $G$. That is, the Poincar\'{e} exponent $\delta(G)$ is Hausdorff dimension of the limit set $L(G)$ on the boundary of $\mathbb{H}^n_\mathbb{R}$ or $\mathbb{B}^2$. 
+%where $\dim_B(L(G))$ denotes the box dimension of the limit set of the group $G$. That is, the Poincar\'{e} exponent $\delta(G)$ is Hausdorff dimension of the limit set $L(G)$ on the boundary of $\mathbb{H}^n_\mathbb{R}$ or $\mathbb{B}^2$. 
 
 
 
 \chapter{Bounds of the Hausdorff dimension of Limit Sets of Well-Distributed Schottky Groups}
 
-The purpose of this chapter is to investigate a specific example of Schottky groups that can satisfy our well-distributed configuration definition. Our main theorem in this chapter sets tight constraints on rank two well-distributed Schottky groups. According to our knowledge, this is maybe the first time in history that we have such bounds for Schottky groups other than the case when the Hausdorff dimension approaches the unit one. We also present a conjecture for the exact form of a general formula for the Hausdorff dimension of the limit set of a rank two well-distributed Schottky group in this chapter, hinted by our derivations of the main theorem.
+The purpose of this chapter is to investigate a specific example of Schottky groups that can satisfy our well-distributed configuration definition. Our main theorem in this chapter sets tight constraints on rank-2 well-distributed Schottky groups. According to our knowledge, this is maybe the first time in history that we have such bounds for Schottky groups other than the case when the Hausdorff dimension approaches the unit one. We also present a conjecture for the exact form of a general formula for the Hausdorff dimension of the limit set of a rank-2 well-distributed Schottky group in this chapter, hinted by our derivations of the main theorem.
 
 
 \section{Lower Bound for Poincar\'{e} series}
@@ -1150,7 +1157,7 @@ Let $$d_{\max} = \max_{i=1,..., m} \rho_{\mathbb{B}^2} (0, T_i (0)).$$
 \end{proposition}
 
 \begin{proof}
-We know that Schottky group is a free group. Therefore, the group $\Gamma$ are all the reduced words generated by $T_i$, and $\Gamma_n$ denotes the set of all reduced words of length $n$. We can find that $\#\Gamma_n\asymp (2m-1)^n$ by writing out the tree of the orbit $\Gamma(0)$, and see the pattern\footnote{The $(2m-1)$ factor is resulting from the inverse of each parent node.} that there must be $(2m-1)^n$ for each $n$. We also notice that if $T\in \Gamma_n$, then we can write $T = T_{i_1}....T_{i_n}$ where $T_{i_j}\ne T_{i_{j+1}}^{-1}$ and $T_{i_n}\in \{T_1,...,T_m, T_1^{-1},...,T_m^{-1}\}$. We have 
+We know that all Schottky groups are free groups. Therefore, the group $\Gamma$ are all the reduced words generated by $T_i$, and $\Gamma_n$ denotes the set of all reduced words of length $n$. We can find that $\#\Gamma_n\asymp (2m-1)^n$ by writing out the tree of the orbit $\Gamma(0)$, and see the pattern\footnote{The $(2m-1)$ factor is resulting from the inverse of each parent node.} that there must be $(2m-1)^n$ for each $n$. We also notice that if $T\in \Gamma_n$, then we can write $T = T_{i_1}....T_{i_n}$ where $T_{i_j}\ne T_{i_{j+1}}^{-1}$ and $T_{i_n}\in \{T_1,...,T_m, T_1^{-1},...,T_m^{-1}\}$. We have 
 \begin{equation}
 \begin{array}{c}
 \rho_{\mathbb{B}^2}(0,T(0)) \leq  \rho_{\mathbb{B}^2}(0,T_{i_1}(0))+
@@ -1176,22 +1183,18 @@ Since every Schottky group $G$ contains an unlimited number of Schottky subgroup
 
 \section{The Least Upper Bound for Poincar\'{e} series}
 
-We need a more rigorous setup for $T_i(0)$ to obtain an upper bound for the $\delta(\Gamma)$. The following is our definition.
+We need a more rigorous set-up for $T_i(0)$ to obtain an upper bound for the $\delta(\Gamma)$. The following is our definition.
 
-\begin{definition} {\rm We say that $\Gamma$ is {\it well-distributed} Schottky group of rank $m$  with generators $T_1,...,T_m$, if the following holds.}
+\begin{definition} We say that $\Gamma$ is \textit{a well-distributed Schottky group of rank $m$}  with generators $T_1,...,T_m$, if the following holds.
+
 \begin{enumerate}
-\item[(1)] {\rm $d(0,T_i0)$ are equal to each other for all $i=1,...,m$. }
-\item[(2)] {\rm  Let $r = d(0,T_i0)$ be the number defined in (1). The argument of the complex numbers $\{T_i (0): i=1,...,2m\}$, arranged in ascending order, are equal angle apart in the circle  $|z|=r$}. 
-\item[(3)] {\rm Half-spaces $D_0(T_i)$ are closed disjoint disks. }
+\item[(1)] $\rho_{\mathbb{B}^2}(0,T_i0)$ are equal to each other for all $i=1,...,m$. 
+\item[(2)] Let $r = \rho_{\mathbb{B}^2}(0,T_i0)$ be the number defined in (1). The argument of the complex numbers $\{T_i (0): i=1,...,2m\}$, arranged in ascending order, are equal angles apart in the circle  $\vert z\vert=r$. 
+\item[(3)] Half-spaces $D_0(T_i)$ are closed disjoint disks. 
 
 \end{enumerate}
 \end{definition}
 
-Secondly, it will be useful if there is at least one pair of perpendicular bisectors of $T_i$ and its inverse $T^{-1}_i$ are located next to each other. 
-
-\begin{definition}\label{def special}
-Let $\Gamma$ be a well-distributed Schottky group of rank $m$. If there exists at least one pair of geodesics $[0,T_i0]$ and $[0,T^{-1}_i0]$ that are located next to each other, where $T_i$ is a group generator of a Schottky group $\Gamma$, then $\Gamma$ is \textit{specially well-distributed}. 
-\end{definition}
 
 
 
@@ -1232,11 +1235,11 @@ For the inverses, by Definition \ref{def schottky}, each element $T_j$ in the se
 
 Now, we can define our dictionary and a cross product abbreviation for each reduced word $T_{i_1}T_{i_2}...T_{i_n}$:
 \begin{definition}
-Fix a Schottky group $\Gamma(T_1,T_2,...,T_m)$ of rank $m$. Let ${\mathcal W}_n$ be the set of all possible reduced words $T=T_{i_1}T_{i_2}...T_{i_n}$, where each $i_j\in\left\lbrace 1,2,...,2m\right\rbrace$ i.e. $\text{len}(T)=n$. Then, the dictionary of $\Gamma$ is 
+Fix a Schottky group $\Gamma(T_1,T_2,...,T_m)$ of rank $m$. Let ${\mathcal W}_n$ be the set of all possible reduced words $T=T_{i_1}T_{i_2}...T_{i_n}$, where each $i_j\in\left\lbrace 1,2,...,2m\right\rbrace$ i.e. $\text{len}(T)=n$. Then, \textit{the dictionary of $\Gamma$} is 
 $$
 \bigcup\limits_{n}W_n,
 $$
-and the cross product abbreviation of $T_{i_1}T_{i_2}...T_{i_n}$ is by defining the index $I$ as a cross product of $n$ alphabets: $I\in \mathcal{A}_1\times\mathcal{A}_2\times\mathcal{A}_3...\times\mathcal{A}_n$, and each $i_j\in \mathcal{A}_j$. Therefore, we can denote $$T_I:=T_{i_1}T_{i_2}...T_{i_n},$$
+and \textit{the cross product abbreviation of $T_{i_1}T_{i_2}...T_{i_n}$} is by defining the index $I$ as a cross product of $n$ alphabets: $I\in \mathcal{A}_1\times\mathcal{A}_2\times\mathcal{A}_3...\times\mathcal{A}_n$, and each $i_j\in \mathcal{A}_j$. Therefore, we can denote $$T_I:=T_{i_1}T_{i_2}...T_{i_n},$$
 where
 $$
 I=(i_1,i_2,...,i_n).
@@ -1264,7 +1267,7 @@ In particular, this angle is equal to $\frac{j\pi}{m}$ for some $j =  1,2,...,m-
 \end{lemma}
 
 \begin{proof}
-Apply $T_{I}^{-1}$ to $\bigtriangleup [T_{I^{-}}0, \ T_I0, \  T_{I}T_{i_{n+1}}0]$. Its image will be $\bigtriangleup [T_{i_{n}}^{-1}0, \ 0, \  T_{i_{n+1}}0]$. However, given $T_{I}^{-1}$ is a conformal map, the angle must be preserved. The second statement follows immediately from the second condition of well-distributed Schottky group. 
+Apply $T_{I}^{-1}$ to $\bigtriangleup [T_{I^{-}}0, \ T_I0, \  T_{I}T_{i_{n+1}}0]$. Its image will be $\bigtriangleup [T_{i_{n}}^{-1}0, \ 0, \  T_{i_{n+1}}0]$. However, given $T_{I}^{-1}$ is a conformal map, the angle must be preserved. The second statement follows immediately from the second condition of a well-distributed Schottky group. 
 \end{proof}
 
 \begin{lemma}\label{lemma2}
@@ -1299,7 +1302,7 @@ $$
 $$
 \end{lemma}
 \begin{proof}
-Consider the $\angle [0, \ T_{I}T_{i_{n+1}}0, \ T_I0]$. Applying the hyperbolic cosine law to  this triangle, we obtain
+Considering the triangle $\bigtriangleup [0, \ T_{I}T_{i_{n+1}}0, \ T_I0]$, and applying the hyperbolic cosine law to this triangle, we obtained
 $$
 \cosh x_{I,T_{i_{n+1}}} = \cosh x_I \cosh r-\sinh x_I  \sinh r \cos \alpha_{Ii_{n+1}}.
 $$
@@ -1315,30 +1318,22 @@ for some $j=1,2,...,2m-1$ using Lemma \ref{lemma1} and Lemma \ref{lemma2}. The l
 \end{proof}
 
 
-
-\begin{definition}
-A path in $\mathbb{B}^2$ is a continuous map $h$ from the closed interval $[a,b]$ to $\mathbb{B}^2$.
-\end{definition}
-
-
-
-
-\begin{definition}
-A path of a well-distributed Schottky group, $\mathcal{L}(\Gamma)$, is a continuous function with an image that is connected by infinite many geodesics in a hyperbolic space $\mathbb{B}^2$, starting from the origin, and endpoints of each such geodesic are in the set of the orbit of the origin, i.e. $\Gamma(0)$. Furthermore, a path of $\Gamma$ constructed by $n+1$ nodes is denoted as follows
-$$
-\mathcal{L}(\Gamma):=[0,T_{i_1}0,T_{i_1}T_{i_2}0,...,T_{i_1}...T_{i_n}0].
-$$
-\end{definition}
+%%%%%%%%%
+%\begin{definition}
+%A path in $\mathbb{B}^2$ is a continuous map $h$ from the closed interval $[a,b]$ to $\mathbb{B}^2$.
+%\end{definition}
+%%%%%%%%%
 
 
+%%%%%%%%%
+%\begin{definition}
+%A path of a well-distributed Schottky group, $\mathcal{L}(\Gamma)$, is a continuous function with an image that is connected by infinite many geodesics in a hyperbolic space $\mathbb{B}^2$, starting from the origin, and endpoints of each such geodesic are in the set of the orbit of the origin, i.e. $\Gamma(0)$. Furthermore, a path of $\Gamma$ constructed by $n+1$ nodes is denoted as follows
+%$$
+%\mathcal{L}(\Gamma):=[0,T_{i_1}0,T_{i_1}T_{i_2}0,...,T_{i_1}...T_{i_n}0].
+%$$
+%\end{definition}
+%%%%%%%%%%%
 
-
-
-Consider the following particular instance of a well-distributed Schottky group:
-
-\begin{definition}
-Let $\Gamma$ be a well-distributed Schottky group. If when $\text{len}(T_{i_j})=1$ for all $i_j$ in the alphabet $\mathcal{A}(\Gamma)$, then we have $\angle[T_{i_j}0,0,T_{i_j}^{-1}0]=\pi$, and $\Gamma$ is called specially well-distributed.
-\end{definition}
 
 
 The next step is to illustrate several examples of this sort of Schottky group by charting their $\Gamma(0)$ orbit.
@@ -1358,7 +1353,7 @@ Recall the Cayley transformation $\Psi(z):\mathbb{H}^2\to\mathbb{B}^2$,
 $$
 \Psi(z):=\frac{iz+1}{z+i}, 
 $$
-then after normalizing its matrix representation, we have the matrix operator
+then after normalizing its matrix representation, we can have the matrix operator
 $$
 \Psi=\begin{pmatrix}
 \frac{i}{\sqrt{2}} &  \frac{1}{\sqrt{2}} \\
@@ -1388,13 +1383,15 @@ which fixes $0$, and its upper-half plane conjugate $\Psi^{-1} R\Psi$ fixes $+i$
 
 Then, we can have two methods to plot $\Gamma(0)$. Both of them give the same output.
 
-\noindent\textbf{Method 1:}  Recall $\Gamma$ is well-distributed. Assume $z\in\mathcal{R}(\Gamma,T_{i_1})\cap \Gamma(0)$, and $T_{i_1}z=RT_{i_j}z$. Instead of using $T_{i_1}$ to derive $T_{i_1}z$, we want to use $T_{i_j}$. Hence, firstly use $R^{-1}z$ to map $z$ to $\mathcal{R}(\Gamma,T_{i_j})\cap \Gamma(0)$. Then, we apply $T_{i_j}$ on it, and use $R$ to map it back to $\mathcal{R}(\Gamma,T_{i_1})\cap \Gamma(0)$. Since each point in $\Gamma(0)$ contains by $D_0(T_{i_j})$ can be obtained by using elliptic isometry to derive by mapping a related point from another sector $D_0(T_{i_k}), k\neq j$.
+\noindent\textbf{Method 1:}  Let $\Gamma$ be well-distributed. Assume $z\in\mathcal{R}(\Gamma,T_{i_1})\cap \Gamma(0)$, and $T_{i_1}z=RT_{i_j}z$. Instead of using $T_{i_1}$ to derive $T_{i_1}z$, we want to use $T_{i_j}$. As a result, first use $R^{-1}z$ to map $z$ to $\mathcal{R}(\Gamma,T_{i_j})\cap \Gamma(0)$. Then we apply $T_{i_j}$ to it and utilize $R$ to map it back to $\mathcal{R}(\Gamma,T_{i_1})\cap \Gamma(0)$. Because each point in $\Gamma(0)$ contained by $D_0(T_{i_j})$ may be found by applying elliptic isometry to obtain, i.e. by mapping a related point from another sector $D_0(T_{i_k}), k\neq j$.
 
-Thus, instead of considering the generators $T_1,..,T_m,T_1^{-1},...,T_m^{-1}$, we have:
+
+
+Thus, instead of considering the generators $T_1,..,T_m,T_1^{-1},...,T_m^{-1}$, we can derive:
 $$
 \Gamma=\left\langle T_{i_j}, RT_{i_j}R^{-1},...R^{m-1}T_{i_j}R^{-(m-1)} \right\rangle,
 $$
-and for simplicity we can let $T=T_{i_j}$, then
+and for simplicity we can let $T=T_{i_j}$, then we can obtain
 $$
 G':=\left\langle T, RTR^{-1},...R^{m-1}TR^{-(m-1)} \right\rangle
 $$
@@ -1403,10 +1400,10 @@ Then, we can use $G'(0)\cap \Gamma(0)$ to reconstruct $\Gamma(0)$.
 
 
 
-\noindent\textbf{Method 2:} Assume we already know $\Gamma(0)$. At the highest level, $\Gamma$ is reconstructed counter-clockwisely and level by level. For $N=1$, we start with $T_{i_j}0$, and map it to $RT_{i_j}0$, $R^2T_{i_j}0$,..., $R^kT_{i_j}0$, ..., $R^{2m-1}T_{i_j}0$. For $N=2$, firstly by using $\Gamma(0)$, apply $T_{i_j}$ at each $T_I0=R^kT_{i_j}0$ where $\text{len}(T_I)=1, T_I\neq T_{i_j}$, then we can determine each node in the second level in $\mathcal{R}(\Gamma,T_{i_j})$. Next, use $R^k$ to map all these nodes to $\mathcal{R}(\Gamma,T_{i_a}), a\neq j$, $a\in\left\lbrace 1,...,2m \right\rbrace$. Assume at $N=K$, all nodes in $\mathcal{R}(\Gamma,T_{i_j})$ and the remaining $\mathcal{R}(\Gamma,T_{i_a})$ are given. Then, for $N=K+1$ level, we use $\Gamma(0)$ to see where each $T_{i_j}T_I0$ goes, when $\text{len}(T_I)=K$. Then, we use the $R^k$ to map those $(2m-1)^{K+1}$ nodes represented only by operators $R$ and $T_{i_j}$ in $\mathcal{R}(\Gamma,T_{i_j})$ to $\mathcal{R}(\Gamma,T_{i_a})$. 
+\noindent\textbf{Method 2:} Assume we already know $\Gamma(0)$. At the highest level, $\Gamma$ is reconstructed counter-clockwisely and level by level. For $N=1$, we start with $T_{i_j}0$, and map it to $RT_{i_j}0$, $R^2T_{i_j}0$,..., $R^kT_{i_j}0$, ..., $R^{2m-1}T_{i_j}0$. For $N=2$, firstly by using $\Gamma(0)$, apply $T_{i_j}$ at each $T_I0=R^kT_{i_j}0$ where $\text{len}(T_I)=1, T_I\neq T_{i_j}$, then we can determine each node in the second level in $\mathcal{R}(\Gamma,T_{i_j})$. Next, use $R^k$ to map all these nodes to $\mathcal{R}(\Gamma,T_{i_a}), a\neq j$, $a\in\left\lbrace 1,...,2m \right\rbrace$. Assume at $N=K$, all nodes in $\mathcal{R}(\Gamma,T_{i_j})$ and the remaining $\mathcal{R}(\Gamma,T_{i_a})$ are given. Then, for $N=K+1$ level, we use $\Gamma(0)$ to see where each $T_{i_j}T_I0$ goes, when $\text{len}(T_I)=K$. Next, we use the $R^k$ to map those $(2m-1)^{K+1}$ nodes represented only by operators $R$ and $T_{i_j}$ in $\mathcal{R}(\Gamma,T_{i_j})$ to $\mathcal{R}(\Gamma,T_{i_a})$. 
 
 
-Either way, since $T$ fixes $\pm i$, so we start to plot $\Gamma(0)$ from the sector that is in the lower half-plane for all $m$. We could like to find the angle between the intercepts of the half-space $D_{0}(T)$ and the unit circle $\partial\mathbb{B}^2$.
+Either way, since $T$ fixes $\pm i$, we start to plot $\Gamma(0)$ from the sector that is in the lower half-plane for all $m$. We would like to find the angle between the intercepts of the half-space $D_{0}(T)$ and the unit circle $\partial\mathbb{B}^2$.
 
 
 Consider the picture of this perpendicular bisector of the map $\Psi^{-1}(z)$ on $\mathbb{H}^2$ to answer this problem. Let the intercept of the positive $x$-axis on $\mathbb{H}^2$ be $(k,0)$. Then, because $\Psi^{-1} (D_0(T))$ is a circle and orthogonal to the $x$-axis, it intersects the positive $y$-axis at $(0,k)$.
@@ -1422,14 +1419,14 @@ $$
 k=\Lambda.
 $$
 
-On the other hand, on $\mathbb{B}^2$ since we have 
+On the other hand, on $\mathbb{B}^2$ since we can have 
 $$
 \Psi((\Lambda,0)) = \left(\cos\left(\frac{\theta}{m}\right), \sin\left(\frac{\theta}{m}\right)\right).
 $$
 
 Hence, we can easily find $\Lambda$ by specifying $\theta$.
 
-For example, let $m=2$, if we want to find $\Lambda$ when $\theta=\frac{\pi}{2}$, we have
+For example, let $m=2$, if we want to find $\Lambda$ when $\theta=\frac{\pi}{2}$, we can derive
 $$
 \Psi^{-1}\left(\left(\frac{1}{\sqrt{2}}, \frac{-1}{\sqrt{2}}\right)\right)
 =\left(\frac{\sqrt{2}}{2+\sqrt{2}},0\right)\in\mathbb{C}.
@@ -1487,7 +1484,7 @@ To reach $\delta(G)=1$, we added a small number $0.01$ to let $\Lambda$ pass the
 \end{figure}
 
 
-To begin implementing McMullen's technique, we rotate the orbit by $\frac{\pi}{2}$ counter-clockwise by rotating the above $T$ operator and reassign the result to the symbol $T$ in the following derivation.
+To begin implementing McMullen's technique, we rotate the orbit by $\frac{\pi}{2}$ counter-clockwise by rotating the above $T$ operator and reassigning the result to the symbol $T$ in the following derivation.
 
 In other words, we are going to find an alternative approach that instead of staring from $\mathbb{H}^2$, this time we directly start from $\mathbb{B}^2$ and use $\theta=\frac{\pi}{m}$ to parameterize $T$ instead of using $\Lambda$. 
 
@@ -1499,7 +1496,7 @@ T=\begin{pmatrix}
 \end{pmatrix}.
 $$
 
-Then, for $0<\theta<\frac{\pi}{4}, \forall m\in\mathbb{Z}^+$, we have
+Then, for $0<\theta<\frac{\pi}{4}, \forall m\in\mathbb{Z}^+$, we can have
 $$
 T0=\cos\left(\frac{\theta}{2}\right).
 $$
@@ -1507,7 +1504,7 @@ Thus
 $$
 \vert \gamma\vert^2=\vert \alpha\vert^2\cos^2\left(\frac{\theta}{2}\right).
 $$
-Since $T\in\text{PSU}(1,1)$, by definition of $\text{PSU}(1,1)$, we have
+Since $T\in\text{PSU}(1,1)$, by definition of $\text{PSU}(1,1)$, we can obtain
 $$
 \vert \alpha\vert^2-\vert \gamma \vert^2=1.
 $$
@@ -1529,82 +1526,83 @@ T:=\begin{pmatrix}
 $$
 We can now utilize this revised definition of the operator $T$ to deduce the lemma and main theorem below.
 
+%\begin{lemma}
+%Let $I$ be the index corresponding to the boundary path, $r=\rho_{\mathbb{B}^2}\left(0,T0\right)$, and $I_n$ be the path at the level $n$. Then, 
+%$$
+%\lim\limits_{n\to\infty}\frac{x_{I_n}}{nr}<1.
+%$$
+%\end{lemma}
+%\begin{proof}
+%Recall lemma \ref{upper bound lemma}, we have
+%$$
+%\cosh\left( X_{I_n}\right) = \cosh\left( X_{I_{n-1}}\right)\cosh\left( 
+%1-\tanh\left(X_{I_{n-1}}\tanh\left(r\right)\cos\left(\frac{\pi}{m}-\theta\right) \right)\right).
+%$$
+%Note that $0<\theta<\frac{\pi}{2m}$, so the factor
+%$$
+%1-\tanh\left( X_{I_{n-1}}\right) \tanh\left(r\right) \cos\left(\frac{\pi}{m}-\theta \right)
+%\leq 1-\cos\left(\frac{\pi}{2m} \right):=C.
+%$$
+%Therefore, 
+%$$
+%\cosh\left(X_{I_n} \right)\leq C  \cosh\left( X_{I_{n-1}}\right)\cosh\left( r\right)
+%$$
+%$$
+%\leq C^2\cosh\left(X_{I_{n-2}} \right)\cosh^2\left( r \right)\leq \cdots
+%$$
+%$$
+%\leq C^n\cosh^n\left( r\right).
+%$$
+%Hence, 
+%$$
+%X_{I_{n}}\leq \cosh^{-1}\left( C^n\cosh^n\left(r\right)\right).
+%$$
+%Recall $\cosh^{-1}\left(y\right)=\ln\left(y+\sqrt{y^2-1} \right)$.
+
+%Therefore, 
+%$$
+%X_{I_{n}}\leq \cosh^{-1}\left(C^n\cosh^n\left(r\right) \right)
+%$$
+%$$
+%=\ln\left(C^n\cosh^n\left(r\right)+\sqrt{C^{2n}\cosh^{2n}\left( r\right)-1} \right)
+%$$
+%$$
+%\leq \ln\left(2C^n\cosh^n\left( r\right) \right)
+%$$
+%$$
+%=\ln\left(2\right)+n\ln\left(C\right)+n\ln\left(\cosh\left(r\right)\right).
+%$$
+%Hence, 
+%$$
+%\frac{X_{I_n}}{nr}\leq \frac{\ln\left(2\right)}{nr}+\frac{\ln\left(C\right)}{r}+\frac{\ln\left(C\right)}{r}.
+%$$
+%Take $n$ to infinity:
+%$$
+%\lim\limits_{n\to\infty}\frac{X_{I_{n}}}{nr}\leq \frac{\ln\left(\cosh\left(r\right)\right)}{r}+\frac{\ln\left(C\right)}{r}.
+%$$
+%If $C<1$, then $\ln\left(C\right)<0$, so we have
+%$$
+%\lim\limits_{n\to\infty}\frac{X_{I_{n}}}{nr}<\frac{\ln\left(\cosh\left(r\right)\right)}{r}
+%$$
+%$$
+%=\frac{\ln\left(\frac{e^r+e^{-r}}{2}\right)}{r}<\frac{\ln\left(e^r\right)}{r}=1.
+%$$
+%\end{proof}
+
+
+
 \begin{lemma}
-Let $I$ be the path corresponding to the boundary path, $r=\rho_{\mathbb{B}^2}\left(0,T0\right)$, and $I_n$ be the path at the level $n$. Then, 
-$$
-\lim\limits_{n\to\infty}\frac{x_{I_n}}{nr}<1.
-$$
-\end{lemma}
-\begin{proof}
-Recall lemma \ref{upper bound lemma}, we have
-$$
-\cosh\left( X_{I_n}\right) = \cosh\left( X_{I_{n-1}}\right)\cosh\left( 
-1-\tanh\left(X_{I_{n-1}}\tanh\left(r\right)\cos\left(\frac{\pi}{m}-\theta\right) \right)\right).
-$$
-Note that $0<\theta<\frac{\pi}{2m}$, so the factor
-$$
-1-\tanh\left( X_{I_{n-1}}\right) \tanh\left(r\right) \cos\left(\frac{\pi}{m}-\theta \right)
-\leq 1-\cos\left(\frac{\pi}{2m} \right):=C.
-$$
-Therefore, 
-$$
-\cosh\left(X_{I_n} \right)\leq C  \cosh\left( X_{I_{n-1}}\right)\cosh\left( r\right)
-$$
-$$
-\leq C^2\cosh\left(X_{I_{n-2}} \right)\cosh^2\left( r \right)\leq \cdots
-$$
-$$
-\leq C^n\cosh^n\left( r\right).
-$$
-Hence, 
-$$
-X_{I_{n}}\leq \cosh^{-1}\left( C^n\cosh^n\left(r\right)\right).
-$$
-Recall $\cosh^{-1}\left(y\right)=\ln\left(y+\sqrt{y^2-1} \right)$.
-
-Therefore, 
-$$
-X_{I_{n}}\leq \cosh^{-1}\left(C^n\cosh^n\left(r\right) \right)
-$$
-$$
-=\ln\left(C^n\cosh^n\left(r\right)+\sqrt{C^{2n}\cosh^{2n}\left( r\right)-1} \right)
-$$
-$$
-\leq \ln\left(2C^n\cosh^n\left( r\right) \right)
-$$
-$$
-=\ln\left(2\right)+n\ln\left(C\right)+n\ln\left(\cosh\left(r\right)\right).
-$$
-Hence, 
-$$
-\frac{X_{I_n}}{nr}\leq \frac{\ln\left(2\right)}{nr}+\frac{\ln\left(C\right)}{r}+\frac{\ln\left(C\right)}{r}.
-$$
-Take $n$ to infinity:
-$$
-\lim\limits_{n\to\infty}\frac{X_{I_{n}}}{nr}\leq \frac{\ln\left(\cosh\left(r\right)\right)}{r}+\frac{\ln\left(C\right)}{r}.
-$$
-If $C<1$, then $\ln\left(C\right)<0$, so we have
-$$
-\lim\limits_{n\to\infty}\frac{X_{I_{n}}}{nr}<\frac{\ln\left(\cosh\left(r\right)\right)}{r}
-$$
-$$
-=\frac{\ln\left(\frac{e^r+e^{-r}}{2}\right)}{r}<\frac{\ln\left(e^r\right)}{r}=1.
-$$
-\end{proof}
-\begin{lemma}
-
-
 Let $\Gamma=\left\langle T_1,\dots,T_m \right\rangle$ be well-distributed Schottky group, and let $$X_{I_n}=\rho_{\mathbb{B}^2}\left(0,T_I0 \right).$$ 
 
-Consider the infinite path $I_n=(i_1,i_2,...,i_n,...)\in \mathcal{A}\times\mathcal{A}\cdots\times\mathcal{A}$, where each $\mathcal{A}=\left\lbrace 0,1,2,...,2m-1\right\rbrace$ is an alphabet, and $\mathcal{W}_n=\left\lbrace 
+Consider the infinite index of a reduced word $I_n=(i_1,i_2,...,i_n,...)\in \mathcal{A}\times\mathcal{A}\cdots\times\mathcal{A}$, where each $\mathcal{A}=\left\lbrace 0,1,2,...,2m-1\right\rbrace$ is an alphabet, and $\mathcal{W}_n=\left\lbrace 
 (i_1,i_2,...,i_n):i_j\in\mathcal{A}\right\rbrace$. 
-Then from hyperbolic cosine law, we have
+Then from hyperbolic cosine law, we can have
 $$
 \cosh\left( X_{I_n}\right)=\cosh^n\left(r\right)\prod_{j=1}^{n-1}\left(1-\tanh\left(X_{I_{j+1}}\right)\tanh\left(r\right)\cos\left(\frac{i_{j+1}\pi}{m}-\theta_{I_j}\right)\right)
 $$
 \end{lemma}
 \begin{proof}
-Since after applying $T^{-1}_{I_n-1}$ and using the property of isometry, we have the following
+After applying $T^{-1}_{I_n-1}$ and using the property of isometry, we can derive the following
 $$
 \angle\left(0,T_{I_{n-1}}0,T_{I_n}0\right)=\angle\left(T_{I_{n-2}},T_{I_{n-1}}0,T_{I_n}0\right)
 -\angle\left(T_{I_{n-2}},T_{I_{n-1}}0,0\right)
@@ -1686,7 +1684,7 @@ $$
 Y_{I_{n+1}}=Y_{I_{n}} Y_{i_{n+1}}=\cosh\left(X_{I_{n}}\right)\cosh\left( r\right)\left( 1- \tanh\left(X_{I_{n}}\right)\tanh\left(r\right)\cos\left( \frac{i_{n+1}\pi}{m}-\theta_{I_{n}}\right)\right).
 $$
 \end{small}
-Thus, for the $n+1$ term in $\mathcal{P}$, we have the following
+Thus, for the $n+1$ term in $\mathcal{P}$, we can derive the following
 $$
 P_{n+1}=\sum_{T\in\mathcal{W}_{n+1}}\frac{1}{Y_{I_{n+1}}^t}=\sum_{T\in\mathcal{W}_n}\sum_{i_{n+1}=1}^{2m-1}\frac{1}{Y_{I_{n}i_{n+1}}^t}
 $$
@@ -1696,14 +1694,14 @@ $$
 $$=\sum_{T\in\mathcal{W}_n}\frac{1}{\left(\cosh\left(X_{I_{n}}\right)\right)^t}\frac{1}{\left(\cosh\left(r\right)\right)^t}\sum_{i_{n+1}=1}^{2m-1}\left(1-\tanh\left(X_{I_n}\right)\tanh\left(r\right)\cos\left(\frac{i_{n+1}\pi}{m}-\theta_{I_{n}}\right)\right)^{-t}.
 $$
 \end{small}
-Recall Newton's generalized binomial theorem: Firstly, for $k\geq 1,k\in\mathbb{Z}$, we have
+Recall Newton's generalized binomial theorem: Firstly, for $k\geq 1,k\in\mathbb{Z}$, we can have
 $$
 \binom{-t}{k}:=\frac{\left(-t-0\right)\left(-t-1\right)\cdots \left(-t-\left(k-1\right)\right)}{k!}
 $$
 $$
 =\frac{t\left(t+1\right)\cdots\left(t+\left(k-1\right)\right)}{k!}\left(-1\right)^k, \forall k \in\mathbb{Z}^{+},
 $$
-and secondly for $k=0$, we have
+and secondly for $k=0$, we can obtain
 $$
 \binom{-t}{0}:=1.
 $$
@@ -1908,7 +1906,7 @@ On the other hand, since
 $$
 t\tanh\left(X_{I_n} \right)\tanh\left(r\right)\cos\left(\theta_{I_n}\right)\leq \frac{2}{\cos\left(\frac{\alpha}{2}\right)},
 $$
-and recall that we have
+and recall that 
 $$
 \sum_{i_{n+1}=1}^{3}\left(1-\tanh\left(X_{I_n}\right)\tanh\left(r\right)\cos\left(\frac{i_{n+1}\pi}{2}-\theta_{I_{n}}\right)\right)^{-t}
 $$
@@ -1943,7 +1941,7 @@ The proof is complete after inserting the aforementioned revised bounds into the
 
 
 
-Based on the above theorems, we conjectured
+Based on the above theorems, we conjecture
 $$
 \delta\left(\Gamma\right)=\frac{\ln\left(3\right)}{\ln\left(\cosh\left(r\right)\right)}.
 $$
@@ -2034,7 +2032,7 @@ as $n\to \infty$.
 \end{theorem}
 Hence, the dimension of the conformal measure, $\delta$, is approximated by the power $\alpha$.
 
-The worst case scenario of this theorem could be the case when angle $\theta\to \frac{2\pi}{3}$ in the symmetric pairs of pants example in \cite{mcmullen1998hausdorff}. Since in this case, it must take at least more than one iteration to obtain an accurate digit for the first figure which is unit one.
+The worst case scenario of this theorem could be the case when angle $\theta\to \frac{2\pi}{3}$ in the symmetric pairs of pants example in \cite{mcmullen1998hausdorff}. In this case, it must take at least more than one iteration to obtain an accurate digit for the first figure which is unit one.
 
 
 Please keep in mind that in McMullen's article \cite{mcmullen1998hausdorff}, this technique was developed in such a way that it was changed to adaptively refine only those partition blocks that exceeded a certain dimension $r$.
@@ -2043,14 +2041,19 @@ According to \cite{mcmullen1998hausdorff}, the best possible results are produce
 
 Additionally, supercomputers in 1990s were about 5 to 10 GFLOPS\footnote{A computer system with 1 GFLOPS can do one billion ($10^9$) floating-point calculations per second.} and 2010s laptops could at least have ranging from 100 to 400 GFLOPS, and laptops of the 2010s could be 5 times as much memory, and access at least 4 times as fast.  
 
-In our implementation so far, we have not add this extra assumption into our implementation in C:
+In our implementation so far, we have not added this extra assumption into our implementation in C:
 
  
 \noindent{\footnotesize \url{https://github.com/williamchuang/well-distributed-schottky-groups/tree/main/code}}
 
 Furthermore, for solving eigenvalues, it usually has $O(n^3)$ time complexity, and $O(n\ln(n))$ complexity for memory allocation. This method of the computation of Hausdorff dimension using eigenvalue algorithm is algebraic and numerical. In this thesis we tried to develop a geometric and analytic method (resulted in our main theorems).
 
-Our goals of studying McMullen's algorithm including to reproduce some results of this paper to show our understanding and implementation of this algorithm were correct, to use an approximation (an example is demonstrated in \cite{mcmullen1998hausdorff}[Theorem 3.5]) based on the first-level approximation of this algorithm to check our conjecture in the next chapter.
+Our goals of studying McMullen's algorithm include:
+\begin{enumerate}
+\item[(i)] to reproduce some results of McMullen's paper\cite{mcmullen1998hausdorff} to show our understanding and implementation of this algorithm were correct, and
+\item[(ii)] to use an approximation (an example is demonstrated in \cite{mcmullen1998hausdorff}[Theorem 3.5]) based on the first-level approximation of this algorithm to check our conjecture in the next chapter.
+\end{enumerate}
+  
 
 Since in \cite{mcmullen1998hausdorff}, the explicit forms of three generators of the Schottky group $\Gamma=\left\langle g_1, g_2, g_3\right\rangle$ were omitted, to reproduce some results in this paper, we must reconstruct the group.
 
@@ -2063,7 +2066,7 @@ Let $T\in \text{PSU}(1,1),$ $T$ is hyperbolic, and $T=\begin{pmatrix}\
 
 Then the isometric circle of $T^{-1}$ is $\vert \gamma z + \overline{\alpha}\vert=1$, denoted by $I_{T^{-1}}$. Hence, the center of $I_{T^{-1}}$ is $\frac{-\overline{\alpha}}{\gamma}$ denoted by $z_{I_{T^{-1}}}$, and the radius of $I_{T^{-1}}$ is $\frac{1}{\vert r\vert}$.
 
-Since $\vert T0\vert<1$, if $\vert \alpha \vert\neq 0$, then we have 
+Since $\vert T0\vert<1$, if $\vert \alpha \vert\neq 0$, then  
 $$
 \frac{\overline{\gamma}}{\overline{\alpha}}<1 \Rightarrow \vert \alpha \vert>\vert \gamma\vert.
 $$
@@ -2088,19 +2091,19 @@ and a reflection in a line ($ax+by=c$) is a map with the following form:
 $$
 h(z)=\frac{2 i c+(b-ai)\overline{z}}{b+ai}.
 $$
-Notice that $I(z)$ and $h(z)$ are non-analytic if we only have one of them alone, but any composition of even number of them is analytic. Hence, we assumed each $g_i(z)$ is decomposed into the following:
+Notice that $I(z)$ and $h(z)$ are non-analytic if we only have one of them alone, but any composition of even numbers of them is analytic. Hence, we assumed each $g_i(z)$ is decomposed into the following:
 $$
 g_i(z)=I_i(h_i(z)).
 $$
 Therefore, we have the following lemma of half-spaces
 \begin{lemma}
-For each $g_i$, we have
+For each $g_i$,
 $$
 D_0(g_i)= D_0(g_i^{-1}).
 $$
 \end{lemma}
 \begin{proof}
-Since for each $g_i$, we have
+Since for each $g_i$, 
 $$
 g_i=g_i^{-1}.
 $$
@@ -2134,7 +2137,7 @@ $$
 \frac{\partial g_1}{\partial z} = \frac{ad-bc}{(cz+d)^2}.
 $$
 
-For $g_2(z)$, we have
+For $g_2(z)$, 
 $$
 h_2(z)=\left(\frac{(1-\sqrt{3}i)}{(1+\sqrt{3}i)} \right)\overline{z}:=H_2\overline{z}.
 $$
@@ -2152,7 +2155,7 @@ $$
 \overline{H}_2 &  -\overline{q_2}
 \end{pmatrix}.
 $$
-Similarly, for $g_3$, we have
+Similarly, for $g_3$, 
 $$
 g_3(z)=\frac{q_3 \overline{H}_3 z-q_3\overline{q_3}+R^2}{\overline{H}_3 z-\overline{q_3}}
 $$
@@ -2187,7 +2190,7 @@ and for the diagonal entries,
 $$
 T_{11}=T_{22}=T_{33}=0.
 $$
-Thus, based on McMullen's algorithm, for the first level (or the first iteration), we have
+Thus, based on McMullen's algorithm, for the first level (or the first iteration),
 $$
 2\left(\frac{3}{7}\right)^\alpha=1.
 $$
@@ -2197,7 +2200,7 @@ $$
 \alpha=\frac{\ln\left(\frac{1}{2}\right)}{\ln\left(\frac{3}{7}\right)}\approx 0.818068.
 $$
 
-This result can be used to verify whether our implementation make sense in Chapter 6.
+This result can be used to verify whether our implementation makes sense in Chapter 6.
 
 Furthermore, the formula
 $$
@@ -2209,18 +2212,18 @@ Furthermore, in general, by using cosine law,
 $$
 \vert x_2-q_1\vert^2=2+\left(\tan^2\left(\frac{\theta}{2}\right)\right)+\sec\left(\frac{\theta}{2}\right).
 $$
-Thus, in general, for $\theta\in(0,\frac{2\pi}{3}]$, and for the first level approximation, we have
+Thus, in general, for $\theta\in(0,\frac{2\pi}{3}]$, and for the first level approximation, we can obtain the following
 $$
-\bigg|\frac{\partial g_1}{\partial z}\bigg|=\frac{\tan^2\left(\frac{\theta}{2}\right)}{2+\left(\tan^2\left(\frac{\theta}{2}\right)\right)+\sec\left(\frac{\theta}{2}\right)}.
+\bigg|\frac{\partial g_1}{\partial z}\bigg|=\frac{\tan^2\left(\frac{\theta}{2}\right)}{2+\left(\tan^2\left(\frac{\theta}{2}\right)\right)+\sec\left(\frac{\theta}{2}\right)},
 $$
-
+where $R=\tan\left(\frac{\theta}{2}\right)$.
 
 
 Moreover, in general, by solving the equation
 $$
 2t^\alpha=1,
 $$
-where $t=\bigg|\frac{\partial g_1}{\partial z}\bigg|$, then we have
+where $t=\bigg|\frac{\partial g_1}{\partial z}\bigg|$, then 
 $$
 \delta(G)\approx \alpha=\frac{\ln\left(\frac{1}{2}\right)}{\ln\left(t \right)}
 =\frac{\ln\left(\frac{1}{2}\right)}{\ln\left(\frac{\tan^2\left(\frac{\theta}{2}\right)}{2+\left(\tan^2\left(\frac{\theta}{2}\right)\right)+\sec\left(\frac{\theta}{2}\right)} \right)}.
@@ -2245,7 +2248,7 @@ $$
 $$
 =\frac{1}{\sin\left(\frac{\theta}{2}\right)^2}+\frac{1}{\tan\left(\frac{\theta}{2}\right)^2}.
 $$
-For $\theta\to 0$, we have
+For $\theta\to 0$, 
 $$
 \sin\left(\frac{\theta}{2}\right)^2\approx \left(\frac{\theta}{2}\right)^2 \approx \tan\left(\frac{\theta}{2}\right)^2.
 $$
@@ -2254,7 +2257,7 @@ $$
 \cosh\left( r\right)\simeq \frac{8}{\theta^2}.
 $$
 
-On the other hand, for $m=2$, we have 
+On the other hand, for $m=2$,  
 $$
 R=\tan\left(\frac{\theta}{2}\right)\approx \frac{\theta}{2},
 $$
@@ -2262,7 +2265,7 @@ and
 $$
 \vert x_2-q_1\vert=\sqrt{2}.
 $$
-Therefore, from the first level approximation of McMullen's algorithm, we have
+Therefore, from the first level approximation of McMullen's algorithm, 
 $$
 \bigg|\frac{\partial g_1}{\partial z}\bigg|=\frac{R^2}{\vert x_2-q_1\vert^2} \approx \frac{\theta^2}{8}.
 $$
@@ -2279,7 +2282,7 @@ $$
 
 When McMullen's results\cite{mcmullen1998hausdorff} are compared to our first level approximation result, we can see that they both coincide at the first digit after the decimal point from $1^\circ$ to $80^\circ$.
 
-Please keep in mind that McMullen's results were based on at a level 18 computation. Additionally, it was stated in \cite{mcmullen1998hausdorff} that there were about 600,000 Markov partitions in this level, and $600,000\approx 600\cdot 2^{10} < 6 \cdot 2^{17}= 3 \cdot  2^{18}$, but in our implementation, at level 1 we only use three Markov partitions.
+Please keep in mind that McMullen's results were based on a level 18 computation. Additionally, it was stated in \cite{mcmullen1998hausdorff} that there were about 600,000 Markov partitions in this level, and $600,000\approx 600\cdot 2^{10} < 6 \cdot 2^{17}= 3 \cdot  2^{18}$, but in our implementation, at level 1 we only use three Markov partitions.
 
 \begin{figure}[H]
 \centering
@@ -2293,7 +2296,7 @@ In the above figure, we plotted three results together, including the data publi
 $ for $N=1$ which is colored in green.
 
 
-We can see that the $N=1$ theoretical result can rather well resemble McMullen's $N=18$ finding\cite{mcmullen1998hausdorff} for $\theta\in [0^\circ,80^\circ]$. Furthermore, we can see that, owing to McMullen's piratical concern, the outcome of our implementation's $N=1$ instance did not correspond with the theoretical findings or the $N=18$ results provided by McMullen.
+We can see that the $N=1$ theoretical result can rather well resemble McMullen's $N=18$ finding\cite{mcmullen1998hausdorff} for $\theta\in [0^\circ,80^\circ]$. Furthermore, we can see that, owing to McMullen's practical concern, the outcome of our implementation's $N=1$ instance did not correspond with the theoretical findings or the $N=18$ results provided by McMullen.
 
 
 This, however, may be improved angle by angle. It takes longer when $N$ exceeds $8$ (after $N>8$, each level may take more than 2 hours before parallel computing), but it is achievable.
@@ -2325,7 +2328,7 @@ The meaning of the above table is twofold: First and foremost, it demonstrates t
 
 
 
-Furthermore, in the following table, for large $\theta$, i.e. $\theta\to\frac{2\pi}{3}$, we can observe that the sequence tend to converge to $1$.
+Furthermore, in the following table, for large $\theta$, i.e. $\theta\to\frac{2\pi}{3}$, we can observe that the sequence tends to converge to $1$.
 
 
 \begin{center}
@@ -2350,7 +2353,7 @@ Furthermore, in the following table, for large $\theta$, i.e. $\theta\to\frac{2\
 \end{table}
 \end{center}
 
-Based on the above observation, we can also notice that compared to $N=1$, the more level we can reach, the larger value $\alpha_N(\Gamma)$ will be, and different angles need different $N$ to converge when the same precision was given. Furthermore, based on these above results, including our $N=1$ theoretical formula can fit McMullen's result well for $\theta\leq 80^\circ$, and when $\theta>80^\circ$, as showed in the above two examples, we can have a good approximation compare to McMullen's results by increasing the number of level, $N$. 
+Based on the above observation, we can also notice that compared to $N=1$, the more level we can reach, the larger value $\alpha_N(\Gamma)$ will be, and different angles need different $N$ to converge when the same precision was given. Furthermore, based on these above results, including our $N=1$ theoretical formula can fit McMullen's result well for $\theta\leq 80^\circ$, and when $\theta>80^\circ$, as shown in the above two examples, we can have a good approximation compare to McMullen's results by increasing the number of level, $N$. 
 
 Finally, we also use the same understanding to implement McMullen's algorithm for $m=2$ well-distributed Schottky group and plot the following results with the results generated by our main theorem and conjecture all together.
 
@@ -2367,7 +2370,7 @@ $$
 \caption{Results from our main theorems (colored in green and black), conjecture (blue), theoretical $N=1$ approximation (dotted black), and numerical $N=1$ approximation implementation of McMullen algorithm (red).}
 \end{figure}
 
-Since we have not had enough time to improve the results of our implementation of McMullen's algorithm. However, based on the above examples, we believe that once $N$ increases, the curve will be shifted towards the conjectured curve.
+Although we have not had enough time to improve the results of our implementation of McMullen's algorithm, based on the above examples, we believe that once $N$ increases, the curve will be shifted towards the conjectured curve.
 
 Surprisingly, the findings of the $N=1$ approximation precisely match our conjecture for $N\to \infty$. Therefore, if our conjecture is true, then this implies that for a well-distributed Schottky group of rank $2$, $\delta(\Gamma)=\alpha_1(\Gamma)$. It may also imply that for all $N$, we have $$\delta(\Gamma)=\alpha_N(\Gamma)=\alpha_1(\Gamma)=\frac{\ln\left(\frac{1}{3}\right)}{\ln\left(\frac{\tan^2\left(\frac{\theta}{2}\right)}{2+\left(\tan^2\left(\frac{\theta}{2}\right)\right)} \right)}=\frac{\ln\left(3\right)}{\ln\left(\cosh\left(r\right)\right)},$$ where
 $$
@@ -2383,7 +2386,7 @@ $$
 \frac{\tan^2\left(\frac{\theta}{2}\right)}{2+\left(\tan^2\left(\frac{\theta}{2}\right)\right)} = \left(\frac{1+\cos^2\left(\frac{\theta}{2}\right)}{\sin^2\left(\frac{\theta}{2}\right)}\right)^{-1}.
 $$
 Hence, we always have $\frac{\ln\left(\frac{1}{3}\right)}{\ln\left(\frac{\tan^2\left(\frac{\theta}{2}\right)}{2+\left(\tan^2\left(\frac{\theta}{2}\right)\right)} \right)}=\frac{\ln\left(3\right)}{\ln\left(\cosh\left(r\right)\right)}$ for all $0<\theta<\frac{\pi}{2}$.
-This alternate strategy might also shed some light on the meaning of $cosh(r)$ in our conjecture. A proof of the conjecture, a generalization to $m>2$, and enhancements to our implementations are on the horizon for our future work. Due to there are heavily matrix operations involved, an implementation on parallel computing in a contemporary computer might potentially enhance McMullen's results.
+This alternate strategy might also shed some light on the meaning of $cosh(r)$ in our conjecture. A proof of the conjecture, a generalization to $m>2$, and enhancements to our implementations are on the horizon for our future work. Due to heavy matrix operations involved, an implementation on parallel computing in a contemporary computer might potentially enhance McMullen's results.
 
 
 Our source code can be downloaded from GitHub: \newline
@@ -2396,3 +2399,5 @@ Our source code can be downloaded from GitHub: \newline
 \bibliography{thesis}
 %\bibliography{qhe.bib}
 \end{document}
+
+
