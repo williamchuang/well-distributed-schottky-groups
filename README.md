@@ -3,8 +3,7 @@ Code and examples for my master thesis.
 
 Potential application:
 1) non-linear encryption 
-2) mathematical physics
-3) statistical physics
+2) statistical mechanics
 
 TO DO:
 1) Implement the current code in parallel computing.
