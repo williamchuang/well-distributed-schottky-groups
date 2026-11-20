@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the thesis when using this code or these results."
+title: "The Hausdorff Dimension of Limit Sets of Well-distributed Schottky Groups"
+authors:
+  - family-names: Chuang
+    given-names: William Huanshan
+type: software
+repository-code: "https://github.com/williamchuang/well-distributed-schottky-groups"
+license: MIT
+preferred-citation:
+  type: thesis
+  title: "The Hausdorff Dimension of Limit Sets of Well-distributed Schottky Groups"
+  authors:
+    - family-names: Chuang
+      given-names: William Huanshan
+  thesis-type: "M.A. thesis"
+  institution:
+    name: "San Francisco State University"
+  year: 2022
+  month: 5
